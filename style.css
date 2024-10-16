@@ -705,6 +705,7 @@ button:hover{
     display: flex;
     flex-direction: column;
     color: #fff;
+    margin-bottom: 40px;
 }
 
 .txt-conjunto button{
@@ -780,7 +781,9 @@ button:hover{
     height: 800px;
     caret-color: #fff;
     text-align: center;
-    
+    background-color: #000;
+    color: #fff;
+    border-top: 30px solid rgb(255, 217, 0);
 }
 
 .noticias .fundo{
@@ -791,6 +794,7 @@ button:hover{
     /* border-radius: 50px;  */
     border-top: 30px solid rgb(255, 217, 0);
 }
+
 
 
 .ctd-noticias {
@@ -996,7 +1000,7 @@ button:hover{
 /* FOOTER */
 
 footer{
-    background-color: #333;
+    background-color: #000000;
     color: #fff;
     padding: 40px 0;
 }
@@ -1267,7 +1271,7 @@ footer .interface .line-footer3 {
 
 .feed{
     margin-top: 20px;
-    
+
 }
 
 .ctd-perfil h2{
@@ -1285,7 +1289,8 @@ footer .interface .line-footer3 {
 
 .coluna-insta{
     border-top: 2px solid #000 ;
-    padding-top: 20px;
+    padding: 20px;
+    box-shadow: 0 20px 20px #00000025;
 }
 
 .instagram{
@@ -1296,6 +1301,7 @@ footer .interface .line-footer3 {
     align-items: center;
     border-top: 20px solid rgb(255, 0, 106);
     box-shadow: 0 20px 20px #00000025;
+    border-radius: 50px;
 }
 
 .instagram button{
@@ -1310,11 +1316,63 @@ footer .interface .line-footer3 {
     font-size: 20px;
 }
 
-.forma-insta img{
-    width: 310px;
+.forma-insta{
+    width: 300px;
     height: 300px;
     background-color: gray;
     margin: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+
+.forma-insta:hover, .forma-insta i:hover{
+    opacity: 0.8;
+}
+
+.cjt-img i{
+    font-size: 25px;
+    padding: 10px;
+    color: #fff;
+    justify-content: right;
+    display: flex;
+    width: 100%;
+}
+
+
+
+.cjt-video i{
+    font-size: 100px;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+}
+
+.img-insta1{
+    background-image: url(./image/insta1.jpg); 
+}
+.img-insta2{
+    background-image: url(./image/insta2.jpg); 
+}
+.img-insta3{
+    background-image: url(./image/insta3.jpg); 
+}
+.img-insta4{
+    background-image: url(./image/insta4.jpg); 
+}
+.img-insta5{
+    background-image: url(./image/insta5.jpg); 
+}
+.img-insta6{
+    background-image: url(./image/insta6.jpg); 
+}
+.img-insta7{
+    background-image: url(./image/insta7.jpg); 
+}
+.img-insta8{
+    background-image: url(./image/insta8.jpg); 
 }
 
 .parceria{
