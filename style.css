@@ -1067,7 +1067,7 @@ footer .line-footer2{
     display: flex;
     justify-content: space-between;
     font-size: 12px;
-    border-bottom: 3px solid #fff;
+    /* border-bottom: 3px solid #fff; */
 }
 
 .line-footer2 .box-line-footer img{
@@ -1084,7 +1084,7 @@ footer .line-footer2{
 .line-footer2 .box-line-footer .inf-footer p{
     margin-top: 10px;
     font-size: 12px;
-    
+    width: 300px;
 }
 
 footer .line-footer2 .box-line-footer{
@@ -1102,7 +1102,7 @@ footer .box-line-footer img{
     justify-content:left;
 }
 
-.box-line-footer{
+section.line-footer2 .box-line-footer{
     margin: 10px 40px;
     width: 500px;
 }
@@ -1138,6 +1138,38 @@ footer .box-line-footer img{
     margin-right: 10px;
 
 }
+
+
+.box-line-footer1{
+    width: 300px;
+    padding: 20px;
+}
+
+.flex-footer h2{
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(255, 217, 0);
+}
+
+.menu-footer{
+    padding: 0;
+    margin-top: 10px;
+}
+.menu-footer ul li{
+    margin-bottom: 10px;
+    font-weight: 500;
+    align-items: center;
+}
+
+.menu-footer ul li::marker{
+    color: rgb(255, 217, 0); /* Cor da bolinha */
+}
+
+.menu-footer ul{
+    list-style-position: inside;
+}
+
+
 
 .email-footer{
     margin-top: 50px;
@@ -1325,8 +1357,10 @@ footer .box-line-footer img{
 .perfil{
     display: flex;
     align-items: center;
-    width: 100vw;
+
     height: 100px;
+    justify-content: left;
+    margin: 0 100px;
 }
 
 .perfil img{
@@ -1341,12 +1375,13 @@ footer .box-line-footer img{
 .ctd-perfil{
     align-items: center;
     height: 50px;
-    width: 100vw;
+    width: 400px;
 }
 
 .feed{
+    align-items: center;
+    justify-content: baseline;
     margin-top: 20px;
-
 }
 
 .ctd-perfil h2{
@@ -1355,7 +1390,7 @@ footer .box-line-footer img{
 
 .ctd-insta{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .ctd-insta a img:hover{
@@ -1363,20 +1398,24 @@ footer .box-line-footer img{
 }
 
 .coluna-insta{
-    border-top: 2px solid #000 ;
+    /* border-top: 2px solid #000 ; */
     padding: 20px;
-    box-shadow: 0 20px 20px #00000025;
+    box-shadow: 0 10px 20px #00000025;
+    align-items: center;
+    justify-content: left;
+    display: block;
 }
 
 .instagram{
     max-height: 1300px;
     height: auto;
-    margin: 0 100px;
+    margin: 0 0px;
     padding: 0 50px;
     align-items: center;
     border-top: 20px solid rgb(255, 0, 106);
     box-shadow: 0 20px 20px #00000025;
-    border-radius: 50px;
+    /* border-radius: 50px; */
+    justify-content: center;
 }
 
 .instagram button{
