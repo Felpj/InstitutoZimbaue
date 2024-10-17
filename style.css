@@ -792,7 +792,7 @@ button:hover{
     padding: 40px 0;
     margin-bottom: 40px;
     /* border-radius: 50px;  */
-    border-top: 30px solid rgb(255, 217, 0);
+    border-top: 30px solid rgb(187, 187, 187);
 }
 
 
@@ -1002,7 +1002,7 @@ button:hover{
 footer{
     background-color: #000000;
     color: #fff;
-    padding: 40px 0;
+    padding: 25px 0;
 }
 
 footer .line-footer1{
@@ -1063,11 +1063,28 @@ footer .line-footer1{
 
 
 footer .line-footer2{
-    padding: 40px 0;
+    padding: 0px 100px;
     display: flex;
     justify-content: space-between;
     font-size: 12px;
     border-bottom: 3px solid #fff;
+}
+
+.line-footer2 .box-line-footer img{
+    width: 100px;
+}
+
+
+.line-footer2 .box-line-footer .flex i{
+    font-size: 20px;
+    margin-right:20px;
+}
+
+
+.line-footer2 .box-line-footer .inf-footer p{
+    margin-top: 10px;
+    font-size: 12px;
+    
 }
 
 footer .line-footer2 .box-line-footer{
@@ -1080,8 +1097,14 @@ footer .box-line-footer img{
     margin-bottom: 10px;
 }
 
-footer .box-line-footer{
+
+.line-footer2 .box-line-footer .flex{
+    justify-content:left;
+}
+
+.box-line-footer{
     margin: 10px 40px;
+    width: 500px;
 }
 
 .line-footer2 .box-line-footer h3{
@@ -1090,13 +1113,13 @@ footer .box-line-footer{
     font-size: 15px;
 }
 
-.line-footer2 .box-line-footer a{
+/* .line-footer2 .box-line-footer a{
     color: #fff;
     font-size: 12px;
     display: block;
     margin-bottom: 10px;
     text-decoration: none;
-}
+} */
 
 
 .box-line-footer .btn-redes a{
@@ -1116,15 +1139,67 @@ footer .box-line-footer{
 
 }
 
+.email-footer{
+    margin-top: 50px;
+    width: 500px;
+}
+
+.email-footer p{
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+.email-footer button{
+    margin: 0;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    padding: 0px 10px;
+    height: 35px;
+    font-size: 16px;
+    max-width: 400px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    transition: .5s ease-in-out;
+}
+
+.email-footer button:hover{
+    transform: none;
+    border-color: transparent;
+    transform: translateX(10px);
+}
+
+.email-footer i{
+    opacity: 0;
+    margin: 0px;
+    transition: .5s;
+    transform: translateX(-30px);
+}
+
+.email-footer button:hover i{
+    opacity: 1;
+    transform: translateX(0px);
+}
+
 .box-line-footer .btn-redes button:hover{
     background-color: rgb(255, 217, 0);
     color: #000000;
 }
 
-footer .interface .line-footer3 {
-    padding-top: 40px;
-    text-align: center;
-    font-size: 12px;
+
+.line-footer3{
+    margin: 40px 0;
+}
+ .line-footer3 p{
+    font-size: 10px;
+    margin: 0;
+    width: 400px;
+}
+
+.line-footer3 p a{
+    font-size: 10px;
+    color: rgb(255, 217, 0);
 }
 
 .mosaico{
@@ -1309,6 +1384,10 @@ footer .interface .line-footer3 {
     font-size: 14px;
     background-color: rgb(255, 0, 106);
     align-items: center;
+}
+
+.instagram a button:hover{
+    background-color: #06bb00;
 }
 
 .instagram button i{
