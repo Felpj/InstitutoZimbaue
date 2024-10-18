@@ -705,7 +705,7 @@ button:hover{
     display: flex;
     flex-direction: column;
     color: #fff;
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
 }
 
 .txt-conjunto button{
@@ -788,7 +788,7 @@ button:hover{
 
 .noticias .fundo{
     height: 600px;
-    background: linear-gradient(180deg, #ffffff 50%, #fff);
+    background: linear-gradient(180deg, #ffffff 50%, #ffffff);
     padding: 40px 0;
     margin-bottom: 40px;
     /* border-radius: 50px;  */
@@ -1400,7 +1400,7 @@ section.line-footer2 .box-line-footer{
 .coluna-insta{
     /* border-top: 2px solid #000 ; */
     padding: 20px;
-    box-shadow: 0 10px 20px #00000025;
+    /* box-shadow: 0 10px 20px #00000025; */
     align-items: center;
     justify-content: left;
     display: block;
@@ -1413,7 +1413,7 @@ section.line-footer2 .box-line-footer{
     padding: 0 50px;
     align-items: center;
     border-top: 20px solid rgb(255, 0, 106);
-    box-shadow: 0 20px 20px #00000025;
+    /* box-shadow: 0 20px 20px #00000025; */
     /* border-radius: 50px; */
     justify-content: center;
 }
@@ -1515,5 +1515,183 @@ section.line-footer2 .box-line-footer{
     font-size: 18px;
     background-color: #06bb00;
     width: 400px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* DOAÇÃO */
+
+
+section.doacao{
+    height: 600px;
+
+    background-image: url(./image/doação1.png);
+    background-position-y: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    color: #fff;
+    text-align: center;
+}
+
+.doacao > .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #0000009f;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.doacao > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    z-index: 2;
+    position: relative;
+}
+
+.doacao h3{
+    font-size: 45px;
+    line-height: 50px;
+    font-weight: 200;
+}
+
+.doacao h3 span{
+    display: block;
+    font-weight: 700;
+}
+
+
+.doacao p{
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.doacao button{
+    width: 180px;
+    height: 60px;
+    font-size: 18px;
+    border: 2px solid #fff;
+    border-radius:30px;
+    color: #fff;
+    background-color: transparent;
+    text-transform: uppercase;
+    box-shadow: 0 10px 20px #0000003d;
+    cursor: pointer;
+
+}
+
+.doacao button:hover{
+    background-color: #33ff00;
+    color: #000;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* VIDEO BANNER */
+
+section.video-banner{
+    height: 800px;
+    background-color: rgb(221, 221, 221);
+    background-image: url(./image/mosaico-video.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.video-banner .interface{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.video-banner h3{
+    font-size: 55px;
+    line-height: 50px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+
+.video-banner p{
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.video-banner button{
+    width: 180px;
+    height: 60px;
+    font-size: 18px;
+    border: 2px solid #fff;
+    border-radius:30px;
+    color: #fff;
+    background-color: transparent;
+    text-transform: uppercase;
+    box-shadow: 0 10px 20px #0000003d;
+    cursor: pointer;
+
+}
+
+.texto{
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #ffff00, #ffa500, #ffff00);/* IMPORTANTE A 1° COR E A ULTIMA COR SEREM O MAIS PARECIDO POSSÍVEL*/
+    background-size: 300% 100%; 
+
+    animation: degrade 10s linear infinite alternate;
+
+    background-clip: text;
+    -webkit-background-clip: text; /*JOGA A ANIMAÇÃO PARA NOSSO TEXTO*/
+    -webkit-text-fill-color: transparent; /*REMOVE A COR PRETA DO TEXTO*/
+
+    outline: none;
+    
+}
+
+@keyframes degrade {
+    0%{
+        background-position-x: 0%;
+    }
+
+    100%{
+        background-position: 400%;
+    }
     
 }
