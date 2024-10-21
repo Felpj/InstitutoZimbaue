@@ -48,7 +48,12 @@ html{
     display: flex;
     align-items: center;
     flex-direction: column;
-    
+}
+
+.flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 a{
@@ -75,6 +80,12 @@ p{
 }
 
 
+.conteudo-geral{
+    width: 100vw;
+    height:100%;
+    margin-top: 150px;
+    padding: 40px 0;
+}
 
 
 
@@ -620,6 +631,11 @@ main{
     height: 300px;
 }
 
+.apresentacao .txt-apresentacao h1{
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
 .divisao h1{
     margin: 0px;
     font-weight: 400;
@@ -695,17 +711,25 @@ button:hover{
     box-shadow: 0 20px 20px #00000025;
 }
 
+.conjunto h3{
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
 .txt-conjunto{
     height: 600px;
-    width: 100vw;
+    width: 100%;
     background-color: #00dd62;
     align-items: center;
     padding: 30px 4%;
-    justify-content: space-between;
+    /* justify-content: center; */
     display: flex;
     flex-direction: column;
     color: #fff;
     /* margin-bottom: 40px; */
+    margin: 25px;
+    border-radius: 100px;
 }
 
 .txt-conjunto button{
@@ -778,7 +802,7 @@ button:hover{
     flex-direction: row;
     align-items: center;
     margin: 0 ;
-    height: 800px;
+    height: 770px;
     caret-color: #fff;
     text-align: center;
     background-color: #000;
@@ -788,13 +812,23 @@ button:hover{
 
 .noticias .fundo{
     height: 600px;
-    background: linear-gradient(180deg, #ffffff 50%, #ffffff);
-    padding: 40px 0;
+    background-color: #000;
+    padding: 50px 0px;
     margin-bottom: 40px;
     /* border-radius: 50px;  */
-    border-top: 30px solid rgb(187, 187, 187);
+    border-top: 30px solid rgb(255, 217, 0);
 }
 
+.noticias .txt-apresentacao h1{
+    font-weight: 700;
+    text-transform: uppercase;
+    
+}
+
+.noticias .txt-apresentacao{
+    display: flex;
+    flex-direction: column;
+}
 
 
 .ctd-noticias {
@@ -891,7 +925,7 @@ button:hover{
 }
 
 .noticia-controle-previous::before{
-    border: solid #000;
+    border: solid #ffffff;
     border-width: 0 5px 5px 0;
     content: '';
     display: inline-block;
@@ -914,7 +948,7 @@ button:hover{
 }
 
 .noticia-controle-next::before{
-    border: solid #000;
+    border: solid #ffffff;
     border-width: 0 5px 5px 0;
     content: '';
     display: inline-block;
@@ -1370,6 +1404,12 @@ section.line-footer2 .box-line-footer{
 .tit-insta{
     text-align: center;
     margin-bottom: 30px;
+    
+}
+
+.tit-insta h1{
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 .ctd-perfil{
@@ -1670,6 +1710,12 @@ section.video-banner{
 
 }
 
+.video-banner button:hover{
+    background: linear-gradient(45deg, #ffff00, #ffa500, #ffff00);
+    color: #000;
+    font-weight: 600;
+}
+
 .texto{
     text-transform: uppercase;
     background: linear-gradient(45deg, #ffff00, #ffa500, #ffff00);/* IMPORTANTE A 1° COR E A ULTIMA COR SEREM O MAIS PARECIDO POSSÍVEL*/
@@ -1694,4 +1740,197 @@ section.video-banner{
         background-position: 400%;
     }
     
+}
+
+
+iframe{
+    border: 5px solid #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* DOAÇÃO */
+.card {
+    width: 300px;
+    height: 450px;
+    padding: 20px;
+    margin: 40px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    transform-style: preserve-3d;
+    background-color: yellow;
+}
+
+.card h2 {
+    color: #fff;
+    transform-style: preserve-3d;
+    font-size: 18px;
+    text-shadow: 0 3px 3px #00000025;
+}
+
+.imagemConteudo {
+    max-width: 250px;
+    width: 100px;
+    height: auto;
+    transition: .5s;
+}
+
+.card:hover img.imagemConteudo, .card:hover button {
+    transform: translate3d(0, 0, 100px);
+}
+
+.card button {
+    padding: 10px 40px;
+    background-color: #ffffff83;
+    border: 3px solid #fff;
+    border-radius: 20px;
+    color: #000000;
+    font-size: 18px;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: .5s;
+    
+}
+
+.card1 {
+    background-image: linear-gradient(45deg, #fff, #7e7c78);
+}
+
+.card2 {
+    background-image: linear-gradient(45deg, #33ff00, #389925);
+}
+
+.card3 {
+    background-image: linear-gradient(45deg, yellow, #feb20a);
+}
+
+.info {
+    display: none;
+    margin-top: 10px;
+    background-color: rgba(240, 240, 240, 0.9);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.pg-doacao{
+    /* background-image: url(./image/mosaico-video.png);
+    background-repeat: no-repeat;
+    background-size: cover ;
+    background-position: center; */
+    background-color: #000;
+
+}
+
+.banner-geral{
+    height: 400px;
+    background-color: #000;
+    margin-bottom: 30px;
+    background-image: url(./image/mosaico-video.png);
+    background-position: center;
+}
+
+.info.active {
+    display: block;
+    opacity: 1;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.info.active {
+    animation: fadeIn 0.5s ease forwards;
+}
+
+.donation-button-container {
+    text-align: center; 
+    margin-top: auto; 
+    padding: 20px 0;
+}
+
+.donation-button-container button{
+    background-color: transparent;
+    box-shadow: none;
+    width:inherit;
+    height: inherit;
+}
+
+.donation-button-container i{
+    font-size: 100px;
+}
+
+.donation-button {
+    padding: 15px 30px;
+    background-color: #007BFF; 
+    color: white; 
+    text-decoration: none; 
+    border-radius: 25px;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.donation-button:hover {
+    background-color: #0056b3; 
+}
+
+.doacao-estrutura .txt-apresentacao{
+    padding: 40px;
+    align-items: center;
+    display: flex;
+    color: #00e154;
+    text-shadow: 0 3px 3px #0000003d;
+}
+
+.doacao-estrutura .txt-apresentacao h3{
+    text-transform: uppercase;
+}
+
+.doacao-estrutura img{
+    width: 400px;
+    height: 250px;
+}
+
+.doacao-estrutura p{
+    font-size: 20px;
+    text-transform: initial;
+    text-align: center;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.doacao-estrutura h3{
+    font-size: 50px;
+}
+
+.doacao-estrutura img{
+    border-radius: 50px;
+    box-shadow: 0 0px 20px #0000004f;
+    border: 5px solid #fff;
 }

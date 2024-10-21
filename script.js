@@ -11,7 +11,7 @@ setInterval(() => {
 function proximaImg(){
     cont++
 
-    if(cont > 3){
+    if(cont > 2){
         cont = 1
     }
 
@@ -85,8 +85,32 @@ exampleCarrousel.useControls(); // Ativa os controles
 
 
 
-
+// ROLAGEM HEADER
 window.addEventListener("scroll", function() {
-    let header = document.querySelector('#header');
+    let header = document.querySelector('.header');
     header.classList.toggle('rolagem', window.scrollY > 0);
+});
+
+
+
+
+
+// DOAÇÃO
+
+VanillaTilt.init(document.querySelectorAll(".card"), {
+    max: 25,
+    speed: 400,
+    glare: true,
+    "max-glare": 0.5
+});
+
+function toggleInfo(infoId) {
+    const info = document.getElementById(infoId);
+    info.classList.toggle('active');
+}
+
+// Garante que o botão de doação apareça como botão estilizado
+document.addEventListener("DOMContentLoaded", function () {
+    const donationButton = document.getElementById('donation-button');
+    donationButton.style.display = 'inline-block'; // Garante que o botão apareça
 });
