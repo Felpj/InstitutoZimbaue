@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instituto Zimbauê</title>
+
+    <!-- iCONE DO SITE-->
+    <link rel="icon" href="./image/logo.png">
+
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- FONTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- JAVASCRIPT -->
+    <script src="./script.js" defer></script>
+
+
+    <!-- ICONES -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="topo">
+
+        </div>
+        <div class="container">
+
+            <a href="#" class="logo">
+                <div class="logo">
+                    <img src="./image/logo.png" alt="">
+                </div>
+            </a>
+
+            <div class="header-menu">
+
+                <input type="checkbox" name="" id="toggler" aria-controls="navbar" aria-expanded="false">
+                <nav class="navbar" id="navbar">
+                    <ul>
+
+                        <li class="drop-hover"><a href="./instituto.html">Instituto <i
+                                    class="bi bi-caret-down-fill"></i></a>
+                            <div class="drop">
+                                <a href="./sobre.html">Sobre nós</a>
+                                <a href="./nossa-historia.html">Nossa História</a>
+                                <a href="./nossas-acoes.html">Nossas Ações</a>
+                                <a href="./projetos.html">Projetos</a>
+                            </div>
+                        </li>
+                        <li class="drop-hover"><a href="#about">O que fazemos?</a>
+                            <div class="drop">
+                                <a href="">Sobre nós</a>
+                                <a href="">Sobre nós</a>
+                                <a href="">Sobre nós</a>
+                                <a href="">Sobre nós</a>
+                            </div>
+                        </li>
+                        <li><a href="./blog.html">Blog</a></li>
+                        <li><a href="#home">Na Midia</a></li>
+
+                    </ul>
+                </nav>
+
+                <label for="toggler" class="bi bi-list"></label>
+
+            </div>
+        </div>
+
+    </header> <!--FIM HEADER-->
+
+    <div class="conteudo-geral">
+
+        <div class="search-bar">
+
+            <input type="text" id="searchInput" placeholder="Pesquisar notícias..." onkeyup="handleEnter(event)">
+            <button onclick="searchNews()"><img src="./image/logo.png" alt="" class="logo"></button>
+        </div>
+
+
+        <div id="newsList"></div>
+        <div class="new-items"><a
+                href="https://www.assiscity.com/local/instituto-do-negro-zimbaue-e-as-escolas-38566.html"
+                target="_blank"></a>
+        </div>
+
+    </div>
+
+    <main>
+
+
+        <div class="banner-geral"></div>
+        <div class="interface center flex-coluna">
+            <section class="primeira-secao txt-apresentacao">
+                <!-- <picture>
+                    <source media="(min-width: 700px)" srcset="./image/desktop.jpg">
+                    <img src="./image/noticia-principal.jpg" alt="principal">
+                </picture> -->
+
+                <h1>O instituto do Negro de Assis "Zimbaue": Uma historia de Amor e Luta</h1>
+                <p>A data de 13 de maio de 1888 marcou a assinatura da Lei Áurea, através da qual a escravatura foi
+                    abolida
+                    no país, fazendo com que, no papel, um dos mais trágicos capítulos da história do Brasil fosse
+                    extinta.
+                </p>
+                <div class="flex-center">
+                    <a href="https://www.assiscity.com/local/o-instituto-do-negro-de-assis-zimbaue-uma-historia-de-amor-e-luta-126250.html"
+                        target="_blank"><button>Ler mais</button></a>
+                </div>
+            </section>
+
+            <section class="segunda-secao center interface">
+                <div class="texto">
+                    <h2>Novo</h2>
+                </div>
+                <div class="bb mb pb">
+                    <a href="https://www.fema.edu.br/instituto-zimbaue-lanca-14o-festival-da-consciencia-negra-em-parceria-com-a-fema/"
+                        target="_blank">
+                        <div class="color">
+                            <h3>Diretoria Regional de Ensino e Instituto ZIMBAUÊ lançam XIV Festival da Consciência
+                                Negra
+                            </h3>
+                            <p>Na noite da última quinta-feira (23), a Fundação Educacional do Município de Assis (FEMA)
+                                recebeu o Instituto do negro – ZIMBAUÊ e a Diretoria Regional de Ensino do Estado de São
+                                Paulo para lançamento do “XIV Festival da Consciência Negra: 20 anos do Instituto do
+                                negro –
+                                ZIMBAUÊ”, durante a 28ª Semana de Comunicação da FEMA.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="bb mb pb">
+                    <a href="https://deassis.educacao.sp.gov.br/diretoria-de-ensino-da-regiao-de-assis-realiza-cerimonia-de-premiacao-do-vii-concurso-em-comemoracao-ao-mes-da-consciencia-negra/"
+                        target="_blank">
+                        <div class="color">
+                            <h3>Diretoria de Ensino da Região de Assis realiza Cerimônia de Premiação do VII Concurso em
+                                Comemoração ao “Mês da Consciência Negra”</h3>
+                            <p>A Diretoria de Ensino da Região de Assis – DERA, em parceria com o Instituto do Negro de
+                                Assis – Zimbauê, Fundação Educacional do Município de Assis – FEMA e Escola de Samba da
+                                Vila
+                                Operária, realizou, no último dia 17 de novembro, a Cerimônia de Premiação do VII
+                                Concurso
+                                em Comemoração ao “Mês da Consciência Negra” </p>
+                        </div>
+                    </a>
+                </div>
+
+            </section>
+
+            <section class="terceira-secao center interface">
+                <div>
+                    <a href="https://diariodeassis.com.br/diretoria-regional-de-ensino-e-instituto-zimbaue-lancam-xiv-festival-da-consciencia-negra-em-parceria-com-a-fema/"
+                        target="_blank">
+                        <div class="flex">
+                            <div>
+                                <img src="./image/zimzim.jpg" alt="pessoas-cantando">
+                            </div>
+                            <div>
+                                <strong>01</strong>
+                                <h2>Diretoria Regional de Ensino e Instituto Zimbauê lançam XIV Festival da Consciência
+                                    Negra em
+                                    parceria com a FEMA</h2>
+                                <p>Programa celebra 20 anos do Instituto Zimbauê e traz novo formato para comemorar o
+                                    Mês da
+                                    Consciência Negra </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div>
+                    <a href="https://www.assis.sp.leg.br/imprensa/noticias/senhor-claudomiro-de-souza-e-homenageado-pela-camara-municipal-com-diploma-de-merito-zumbi-dos-palmares#:~:text=dos%20Palmares''-,Senhor%20Claudomiro%20de%20Souza%20%C3%A9%20homenageado%20pela%20C%C3%A2mara%20Municipal%20com,M%C3%A9rito%20%22Zumbi%20dos%20Palmares''&text=A%20C%C3%A2mara%20Municipal%20de%20Assis,ao%20Senhor%20Claudomiro%20de%20Souza."
+                        target="_blank">
+                        <div class="flex">
+                            <div>
+                                <img src="./image/zimzim2.jpg" alt="pessoas-sentada">
+                            </div>
+                            <div>
+                                <strong>02</strong>
+                                <h2>Senhor Claudomiro de Souza é homenageado pela Câmara Municipal com Diploma de Mérito
+                                    "Zumbi
+                                    dos Palmares''</h2>
+                                <p>A cerimônia foi presidida pelo vereador Francisco de Assis da Silva (Chico Panela)
+                                    juntamente
+                                    com a mesa diretora composta pelas seguintes autoridades: Senhora Mônica da Silva,
+                                    presidente do Instituto do Negro Zimbauê e Dr. Sérgio Frederico, Advogado e membro
+                                    do
+                                    Instituto do Negro Zimbauê. O Homenageado e sua esposa Marlene Alves também ficaram
+                                    na mesa,
+                                    ao lado do Presidente.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+        
+
+        <div>
+            <a href="https://www.assiscity.com/local/camara-de-assis-entrega-diploma-de-merito-zumbi-dos-palmares-85211.html"
+                target="_blank">
+                <div class="flex">
+                    <div>
+                        <img src="./image/zimzim3.jpg" alt="pessoas-falando">
+                    </div>
+                    <div class="">
+                        <strong>03</strong>
+                        <h2>Câmara de Assis entrega Diploma de Mérito Zumbi dos Palmares</h2>
+                        <p>Como acontece há vários anos, a Câmara Municipal de Assis e o Instituto do Negro Zimbauê,
+                            premiam com o Diploma de Mérito Zumbi dos Palmares</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        </div>
+
+        </section>
+        </div>
+        </div>
+    </main>
+
+
+
+    <div class="mosaico"></div>
+    <footer>
+
+
+        <!-- <div class="interface">
+            <section class="line-footer1">
+
+                <h2>Quer ser o primeiro a saber das novidades do Instituto?</h2>
+                <p>Deixe seu e-mail e receba atualizações exclusivas!</p>
+                <form action="">
+                    <input type="email" name="" id="">
+                    <input type="submit" value="Enviar">
+                </form>
+
+            </section>fim line-footer1 -->
+
+        <section class="line-footer2">
+
+            <div class="box-line-footer">
+                <div class="inf-footer">
+                    <img src="./image/logo.png" alt="Logotipo Zimbauê">
+                    <div class="flex">
+                        <a href=""><i class="bi bi-whatsapp"></i></a>
+                        <a href=""><i class="bi bi-envelope"></i></a>
+                        <a href=""><i class="bi bi-instagram"></i></a>
+                        <a href=""><i class="bi bi-facebook"></i></a>
+                        <a href=""><i class="bi bi-youtube"></i></a>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam veniam voluptatibus exercitationem!
+                    </p>
+                </div>
+                <div class="email-footer">
+                    <p>FIQUE POR DENTRO DAS AÇÕES DO INSTITUTO ZIMBAUÊ PARA FAZER A DIFERENÇA!</p>
+                    <a href=""><button>inscreva-se. envie seu email! <i class="bi bi-caret-right-fill"></i></button></a>
+                </div>
+
+                <section class="line-footer3">
+                    <p>Direitos Autorais &copy; 2024. Todos os direitos reservados.</p>
+                    <p><a href="">Portal de Privacidade.</a> Créditos e Agradecimentos.</p>
+                </section>
+            </div>
+
+            <div class="box-line-footer1">
+                <div class="inf-footer">
+                    <div class="flex-footer">
+                        <h2>O INSTITUTO</h2>
+                        <div class="menu-footer">
+                            <ul>
+                                <li><a href="">link 1</a></li>
+                                <li><a href="">link 1</a></li>
+                                <li><a href="">link 1</a></li>
+                                <li><a href="">link 1</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box-line-footer1">
+                <div class="inf-footer">
+                    <div class="flex-footer">
+                        <h2>O INSTITUTO</h2>
+                        <div class="menu-footer">
+                            <ul>
+                                <li><a href="">link 1</a></li>
+                                <li><a href="">link 1</a></li>
+                                <li><a href="">link 1</a></li>
+                                <li><a href="">link 1</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+        </section><!--fim line-footer2-->
+
+
+
+        <!-- </div>Fim interface -->
+    </footer>
+
+
+
+    <script>
+        const newsData = [
+            {
+                title: "Instituto do Negro (Zimbauê) e as Escolas",
+                content: "Os integrantes do Instituto têm por objetivo sensibilizar a comunidade escolar sobre as questões que envolvem o negro, em comemoração ao mês da Consciência ...",
+                url: "https://www.assiscity.com/local/instituto-do-negro-zimbaue-e-as-escolas-38566.html" // Adicione uma URL válida aqui
+            },
+            {
+                title: "Câmara entrega Diploma de Mérito “Zumbi dos Palmares”",
+                content: "A solenidade de homenagem de entrega do Diploma de Mérito “Zumbi dos Palmares”, que ocorreu na noite de quarta-feira (22) O fundador do Instituto do Negro Zimbauê, Claudomiro de Souza, falou sobre o engrandecimento, realizado com respeito sobre a cultura afrodescendente...",
+                url: "https://www.assis.sp.leg.br/imprensa/noticias/camara-entrega-diploma-de-merito-201czumbi-dos-palmares201d" // Adicione uma URL válida aqui
+            },
+            {
+                title: "Presidente do Instituto Zimbauê destaca o Dia da Consciência Negra",
+                content: "Mônica da Silva, presidente do Instituto do Negro Zimbauê, lembra que o mês de novembro é considerado o da Consciência Negra, sendo hoje, dia 20, a celebração nacional. Ela fala das atividades alusivas a data...",
+                url: "https://difusoraassis.com.br/2018/11/20/presidente-do-instituto-zimbaue-destaca-o-dia-da-consciencia-negra/" // Adicione uma URL válida aqui
+            },
+            {
+                title: "Instituto Zimbauê homenageia promotor de Justiça, Eduardo Amancio",
+                content: "Na quinta-feira, 18 de novembro, às 20 horas, o promotor de justiça, Eduardo Henrique Amancio de Souza  irá receber uma homenagem no Plenário da Câmara Municipal de Assis, com o diploma de mérito “Zumbi dos Palmares”...",
+                url: "https://www.abordagemnoticias.com/noticia/7661/instituto-zimbaue-homenageia-promotor-de-justica-eduardo-amancio" // Adicione uma URL válida aqui
+            },
+            {
+                title: "Cleophânia Galvão promove live sobre movimento negro de Assis",
+                content: "Nesta terça-feira, 1° de dezembro, a Escola Cleophânia Galvão promoverá uma super live em parceria com o Instituto Zimbauê com o tema A importância do movimento negro para a agenda da história da África n Brasil...",
+                url: "https://www.assiscity.com/educacao/cleophania-galvao-promove-live-sobre-movimento-negro-de-assis-105187.html" // Adicione uma URL válida aqui
+
+            },
+            {
+                title: "Alunos do Ernani Rodrigues conquistam 1º e 2º lugar no concurso em comemoração ao mês da Consciência",
+                content: "No dia 20 de novembro de 2018, no Anfiteatro da Fundação Educacional do Município de Assis (FEMA), aconteceu a premiação do projeto Zimbauê...",
+                url: "https://www.assiscity.com/educacao/alunos-do-ernani-rodrigues-conquistam-1o-e-2o-lugar-no-concurso-em-comemoracao-ao-mes-da-consciencia-negra-84934.html" // Adicione uma URL válida aqui
+
+            },
+        ];
+
+        // Função para normalizar o texto (remover acentos e caracteres especiais)
+        function normalizeText(text) {
+            return text.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+        }
+
+        // Função para exibir as notícias
+        function displayNews(newsArray) {
+            const newsList = document.getElementById('newsList');
+            newsList.innerHTML = ''; // Limpa a lista de notícias
+
+            if (newsArray.length > 0) {
+                newsArray.forEach(news => {
+                    const newsItem = document.createElement('div');
+                    newsItem.classList.add('news-item');
+
+                    const newsTitle = document.createElement('h2');
+
+                    // Cria o elemento <a> para o título
+                    const newsLink = document.createElement('a');
+                    newsLink.textContent = news.title;
+                    newsLink.href = news.url ? news.url : "#"; // Usa a URL do item ou "#" se não existir
+                    newsLink.target = "_blank"; // Abre o link em uma nova aba
+
+                    newsTitle.appendChild(newsLink); // Adiciona o link ao título
+                    newsItem.appendChild(newsTitle);
+
+                    // Adiciona o conteúdo da notícia
+                    const newsContent = document.createElement('p');
+                    newsContent.textContent = news.content;
+                    newsItem.appendChild(newsContent);
+
+                    // Adiciona o item de notícia à lista de notícias
+                    newsList.appendChild(newsItem);
+                });
+            } else if (newsArray.length === 0 && document.getElementById('searchInput').value.trim() !== "") {
+                const noResults = document.createElement('p');
+                noResults.classList.add('no-results');
+                noResults.textContent = 'Nenhuma notícia encontrada.';
+                newsList.appendChild(noResults);
+            }
+        }
+
+        // Função para filtrar as notícias com base na busca
+        function searchNews() {
+            const searchInput = document.getElementById('searchInput').value.trim().toLowerCase();
+
+            // Se o campo de busca estiver vazio, não exibe nada
+            if (searchInput === "") {
+                displayNews([]); // Limpa as notícias se a busca estiver vazia
+                return;
+            }
+
+            const normalizedSearch = normalizeText(searchInput);
+            const filteredNews = newsData.filter(news =>
+                normalizeText(news.title).includes(normalizedSearch) ||
+                normalizeText(news.content).includes(normalizedSearch)
+            );
+
+            displayNews(filteredNews); // Exibe os resultados da busca
+        }
+
+        // Função para capturar o evento de tecla Enter
+        function handleEnter(event) {
+            if (event.key === 'Enter') {
+                searchNews(); // Executa a busca ao pressionar Enter
+            }
+        }
+
+        // Adiciona o listener para o evento de tecla Enter no campo de busca
+        document.getElementById('searchInput').addEventListener('keypress', handleEnter);
+
+
+        // ROLAGEM HEADER
+        window.addEventListener("scroll", function () {
+            let header = document.querySelector('.header');
+            header.classList.toggle('rolagem', window.scrollY > 0);
+        });
+
+    </script>
+</body>
+
+</html>
