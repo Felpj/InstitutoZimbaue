@@ -93,6 +93,11 @@ p{
     padding: 40px 0;
 }
 
+.center-left{
+    text-align: left;
+    margin: 15px;
+}
+
 
 
 
@@ -1278,7 +1283,7 @@ section.line-footer2 .box-line-footer{
 }
 
 .mosaico{
-    background-image: url(./image/mosaico2.png);
+    background-image: url(./image/mosaico-geral-branco.png);
     background-size: contain;
     background-position: center;
     height: 150px;
@@ -2218,13 +2223,16 @@ transition: 0.2s;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    /* background-color: rgba(0, 0, 0, 0.322); */
+    /* padding: 30px; */
+    border-radius: 50px;
 }
 
 .news-item {
-margin: auto;
+/* margin: auto; */
 padding: 10px;
 border: 1px solid #ccc;
-border-radius: 0 10px;
+border-radius: 50px;
 width: 100%;
 display: flex;
 flex-direction: column;
@@ -2233,9 +2241,15 @@ align-items: center;
 bottom: 45px;
 position: relative;
 transition: 0.2s;
-background-color: #e2e2e2;
+background-color: #f3f3f3;
 top: 20px;
+box-shadow: 0 10px 10px #00000052;
+cursor: pointer;
+}
 
+.news-item a{
+    
+    
 }
 
 .news-item:hover{
@@ -2272,6 +2286,7 @@ position: relative;
 .search-bar .logo{
     width: 50px;
     position: relative;
+    cursor: pointer;
 }
 
 .search-bar button{
