@@ -1785,7 +1785,7 @@ iframe{
 
 
 /* DOAÇÃO */
-.card {
+.pg-doacao .card {
     width: 300px;
     height: 450px;
     padding: 20px;
@@ -2403,7 +2403,6 @@ position: relative;
         color:#0D5927;
     }
 
-
     .campanha strong{
         font-weight:700
     
@@ -2514,12 +2513,6 @@ position: relative;
     }
 
 
-
-
-
-  
-
-
     .campanha .materiais a:hover{
         transform: translateX(-10px);
         background-color: #063416;
@@ -2537,3 +2530,210 @@ position: relative;
 
 
     
+
+
+
+
+
+
+    /* PESSOAS EM DESTAQUE */
+
+
+    .destaque .header {
+        flex-direction: column;
+      }
+
+      .destaque .conteudo-geral{
+        border-top: 30px solid;
+      }
+      
+      .destaque .header h1 {
+        font-size: 60px;
+        /* Tamanho da fonte */
+        color: #ff4500;
+        /* Cor de "PESSOAS DE" */
+        /* Reduz o espaçamento vertical */
+        margin: 0;
+        /* Remove margens extras */
+      
+      }
+      
+      .destaque .container {
+        display: flex;
+        flex-direction: column;
+        /* Empilha os cards um embaixo do outro */
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        padding: 2rem;
+        background-color: #e2e2e2;
+        background-image: url(./image/mosaico-preto.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-shadow: inset 0 0 500px #000;
+        
+      }
+      
+      .destaque .card {
+        width: 1000px;
+        padding: 10px;
+        /* Controla o tamanho dos cards */
+        border: 1px solid #ccc;
+        background-color: white;
+        box-shadow: 0 0 50px #000;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin: 15px;
+        border-radius: 30px;
+      }
+      
+      .destaque .image-section img{
+        max-width: 400px;
+        max-height: 400px;
+        height: 250px;
+        width: 300px;
+        border-radius: 30px;
+        margin: 15px;
+        box-shadow: 0 10px 20px #00000059;
+      }
+      
+      .destaque .profile-image {
+        width: 100%;
+        height: auto;
+        box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 1rem;
+      }
+
+
+      .destaque .image-section{
+         margin: 0;
+         display: flex;
+         align-items: center;
+      }
+      
+      .destaque .text-section {
+        /* width: 500px; */
+        height: 300px;
+        text-align: left;
+        padding: 20px;
+        max-height: 300px;
+        display: flex;
+        align-items: center;
+      }
+
+      .destaque .text-section a{
+        width: 150px;
+        font-size: 18px;
+        text-align: center;
+        border-radius: 20px;
+      }
+
+      .destaque .txt-apresentacao i{
+        font-size: 50px;
+        color: rgb(255, 174, 0);
+      }
+
+      .destaque .text-section a:hover{
+        transform: scale(1.03);
+      }
+
+      .destaque .text-section .center-left{
+        margin: 0;
+      }
+
+      
+      
+    
+      .destaque .text-section p{
+        font-size: 14px;
+        margin: 0;
+      }
+      
+      .destaque .text-section h2 {
+        font-size: 16px;
+        color: #555;
+        margin: 0;
+        border-top: 3px solid #00a65a;
+        text-shadow: none;
+        /* Linha verde no topo */
+        padding: 10px 0;
+        /* Espaço entre o texto e a linha */
+        /* margin-bottom: 0.5rem; */
+        /* Espaço após o título */
+      }
+      
+      .destaque .text-section h1 {
+        font-size: 25px;
+        color: #222;
+        margin: 0;
+        border-bottom: 3px solid #ffae00;
+        /* Linha verde abaixo do título */
+        padding-bottom: 0.5rem;
+        /* Espaço entre o texto e a linha */
+      }
+      
+      .destaque .description {
+        font-size: 16px;
+        color: #555;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        
+      }
+
+      .destaque .description h2{
+        border: 0;
+      }
+      
+      .destaque .learn-more {
+        display: inline-block;
+        margin-top: 1rem;
+        padding: 0.6rem 1.2rem;
+        background-color: orange;
+        color: white;
+        text-decoration: none;
+        font-size: 1rem;
+        border-radius: 0.3rem;
+      }
+      
+      .destaque .learn-more:hover {
+        background-color: darkorange;
+      }
+      
+      /* Responsividade */
+      @media (max-width: 50rem) {
+        .destaque .card {
+          width: 90vw;
+          /* Ajusta a largura dos cards em telas menores */
+          flex-direction: column;
+        }
+      
+        .destaque .image-section,
+        .destaque .text-section {
+          width: 100%;
+        }
+      
+        .destaque .profile-image {
+          height: 40vh;
+        }
+      
+        .destaque h1 {
+          font-size: 1.5rem;
+        }
+      
+        .destaque h2 {
+          font-size: 1rem;
+        }
+      
+        .destaque .description {
+          font-size: 0.9rem;
+        }
+      
+      
+        .destaque .learn-more {
+          font-size: 0.9rem;
+        }
+      
+      
+      }
