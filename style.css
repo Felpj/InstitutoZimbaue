@@ -2035,9 +2035,6 @@ iframe{
     text-align: justify;
 }
 
-.primeira-secao  .flex-coluna img{
-    
-}
 
 .img-center{
     width: 600px;
@@ -2050,7 +2047,7 @@ iframe{
     border-radius: 20px;
 }
 
-.primeira-secao a button{
+.primeira-secao button#btnLeiaMais{
     padding: 12px 32px;
     background-color: var(--vermillion);
     border: none;
@@ -2349,3 +2346,194 @@ position: relative;
     .no-results {
         color: red;
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* CAMAPANHA DE CONSCIENTIZAÇÃO */
+
+
+
+    .campanha .container{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .campanha .div_titulo{
+        margin:2rem;
+    }
+
+    .campanha .banner-geral{
+        background-image: url(./image/banner-campanha.png);
+        /* box-shadow: 0 20px 20px #0000000e; */
+    }
+
+    .campanha .titulo_container{
+        color:#0D5927;
+        font-weight:700;
+        font-size:50px;
+        margin: 0;
+        text-transform: uppercase;
+        
+    }
+
+    .campanha section.container{
+        background-color: #cecece;
+        box-shadow: inset 0 0 350px #000000;
+    }
+
+    .campanha .txt-apresentacao{
+        padding: 0;
+    }
+
+    .campanha .txt-apresentacao i{
+        font-size: 50px;
+        color:#0D5927;
+    }
+
+
+    .campanha strong{
+        font-weight:700
+    
+    }
+
+
+    .campanha .sub_card{
+        display:flex;
+        
+     }
+
+
+    .campanha .sub_card_informacao{
+        display: flex;
+        flex-direction: column;
+        margin:1rem;
+     }
+
+     .campanha .sub_card_informacao h2{
+        font-size: 25px;
+     }
+
+
+
+    .campanha .card{
+        background-color: #292929;
+        width:1000px;
+        padding: 50px;
+        display: flex;
+        flex-direction: row;
+        height: 350px;
+        max-height: 400px;
+    }
+
+
+    .campanha .card img{
+        width:300px;
+        height: 250px;
+        margin-right: 15px;
+        border-radius: 25px;
+    }
+
+
+    .campanha .card p{
+        color:white;
+        font-size: 16px;
+    
+    }
+
+
+    .campanha .card a{
+        text-decoration: none;
+        color:white;
+        background-color:#0D5927 ;
+        padding:10px 20px;
+        font-size: 20px; 
+        transition: 0.5s ease;
+        border-radius: 30px;
+        width: 200px;
+    
+    }
+
+
+    .campanha .materiais{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:1rem;
+        padding: 2rem;
+    }
+
+
+    .campanha .arrumadinha{
+        display: flex;
+        flex-direction: column;
+        margin-right: 1rem;
+    }
+
+
+    .campanha .materiais a {
+        font-size: 20px;
+        text-decoration: none;
+        color: white;
+        background-color: #0D5927;
+        padding: 10px 20px;
+        transition: 0.5s ease;
+        border-radius: 20px;
+        width: 350px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px; /* Espaçamento entre o texto e o ícone */
+    }
+
+    /* Estilo inicial para o ícone */
+    .campanha .materiais a i {
+        /* display: none; */
+        opacity: 0;
+        transform: translateX(-25px); /* Move o ícone ligeiramente para a esquerda */
+        transition: opacity 0.5s ease, transform 0.5s ease; 
+    }
+
+    /* Aparece o ícone ao passar o mouse */
+    .campanha .materiais a:hover i {
+        opacity: 1;
+        /* display: block; */
+        transform: translateX(0); /* Retorna o ícone para a posição original */
+    }
+
+
+
+
+
+  
+
+
+    .campanha .materiais a:hover{
+        transform: translateX(-10px);
+        background-color: #063416;
+    }
+    
+    .campanha .div_botao:hover{
+        transform: scale(1.05);
+    }
+
+
+    .campanha .div_botao:hover a{
+        border: 2px solid #fff;
+        background-color: #14883d00;
+    }
+
+
+    
