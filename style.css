@@ -343,7 +343,7 @@ header .bi-list{
 }
 
 
-@media (max-width: 700px){
+/* @media (max-width: 700px){
 
     header .bi-list{
         display: block;
@@ -380,16 +380,143 @@ header .bi-list{
         color: #fff;
         border: 2px solid rgb(0, 0, 0);
         display: block;
-        /* border-radius: 20px; */
+        border-radius: 20px;
     }
 
 
-}
+} */
 
 @media (max-width: 460px){
     html{
         font-size: 40% ;
     }
+
+    .conjunto .flex{
+        flex-direction: column;
+    }
+
+    .conjunto .txt-conjunto{
+        margin: 0;
+        border-radius: 40px;
+        padding: 8%;
+        margin: 10px 0;
+        height: 420px;
+    }
+
+    section.conjunto{
+        padding: 0 20px;
+        margin-top: 200px;
+    }
+
+    main .video-banner{
+        margin: 50px 0;
+        max-height: 500px;
+        height: 500px;
+        padding: 20px;
+    }
+
+    .video-banner .interface .texto h3{
+        font-size: 40px;
+    }
+
+    .video-banner .interface a button{
+        width: 100px;
+        height: 40px;
+        font-size: 15px;
+    }
+
+    .video-banner iframe{
+        width: 100%;
+        height: 180px;
+    }
+
+    
+
+    .noticias .fundo{
+        padding: 0px;
+        max-height: 500px;
+        height: 500px;
+        background-color: #fff;
+    }
+
+    .noticias .noticia-item{
+        height: 190px;
+        width: 300px;
+    }
+
+    .noticias .noticia-item-3{
+        height: 220px;
+        width: 330px;
+    }
+
+    .doacao .interface{
+        padding: 20px;
+    }
+
+
+    main .instagram {
+        margin: 0 0px;
+        padding: 0;
+        
+    }
+
+
+    .instagram .coluna-insta .perfil .ctd-perfil p {
+        width: 200px;
+        font-size: 250%;
+        margin-bottom: 0;
+        display: none;
+    }
+    
+
+    .instagram .ctd-insta .forma-insta {
+        width: 100px;
+        height: 100px;
+    }
+
+    .instagram .ctd-insta .img-insta4, .instagram .ctd-insta .img-insta8{
+        display: none;
+    }
+
+
+    body footer .line-footer2{
+        flex-direction: column-reverse;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    body footer .line-footer2 .box-line-footer .inf-footer .flex{
+        justify-content: center;
+    }
+
+    body footer .line-footer2 .box-line-footer{
+        width: 300px;
+    }
+
+    body footer .line-footer2 .box-line-footer .email-footer p{
+        width: 300px;
+    }
+
+
+    body footer .line-footer2 .box-line-footer .email-footer{
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    body footer .line-footer2 p{
+        width: 300px;
+    }
+
+    body header{
+        padding: 0;
+    }
+    
 }
 
 
@@ -1707,7 +1834,7 @@ section.doacao{
 
 /* VIDEO BANNER */
 
-section.video-banner{
+.video-banner{
     height: 800px;
     background-color: rgb(221, 221, 221);
     background-image: url(./image/mosaico-video.png);
@@ -1719,6 +1846,7 @@ section.video-banner{
     border: 20px solid #b3b3b3;
     box-shadow: inset 0 0 500px;
     box-shadow: 0 20px 20px #00000025;
+    
 }
 
 .video-banner .interface{
