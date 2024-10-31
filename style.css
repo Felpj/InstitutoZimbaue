@@ -23,6 +23,10 @@
     --vermillion: #f15051;
     --yellow: #e9aa52;
     --silver: #c5c6ce;
+    --verde: #40ff3af8;
+    --laranja:#ff9249;
+    --preto: #000;
+    --cinza:#ebebeb;
 }
 
 
@@ -645,7 +649,7 @@ main{
 }
 
 .apresentacao .txt-apresentacao h1{
-    font-weight: 800;
+    font-weight: 600;
     text-transform: uppercase;
 }
 
@@ -1616,23 +1620,25 @@ section.line-footer2 .box-line-footer{
 
 section.doacao{
     height: 500px;
-
+    width: 100%;
     background-image: url(./image/doação1.png);
     background-position-y: 100px;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     position: relative;
-    color: #fff;
+    color: #000;
     text-align: center;
     margin: 120px 0;
+    border-top: 10px solid #000;
+    border-bottom: 10px solid #000;
 }
 
 .doacao > .overlay{
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #0000009f;
+    background-color: #ffffffd3;
     width: 100%;
     height: 100%;
     z-index: 1;
@@ -1672,7 +1678,7 @@ section.doacao{
     font-size: 18px;
     border: 2px solid #fff;
     border-radius:30px;
-    color: #fff;
+    color: #000000;
     background-color: transparent;
     text-transform: uppercase;
     box-shadow: 0 10px 20px #0000003d;
@@ -1681,7 +1687,7 @@ section.doacao{
 }
 
 .doacao button:hover{
-    background-color: #33ff00;
+    background-color: rgb(255, 217, 0);
     color: #000;
     font-weight: 600;
 }
@@ -2459,6 +2465,8 @@ position: relative;
         flex-direction: row;
         height: 350px;
         max-height: 400px;
+        border-radius: 50px;
+        margin: 20px;
     }
 
 
@@ -2796,8 +2804,12 @@ position: relative;
         align-items: center;
         justify-content: center;
         gap: 20px;
-        background-color: #ececec;
+        /* background-color: #ececec; */
         padding: 30px;
+    }
+
+    .pg-galeria{
+        background-color: #000000;
     }
 
 
@@ -2814,6 +2826,7 @@ position: relative;
         padding: 0;
         color: #ffffff;
         background-color: rgb(255, 217, 0);
+        border-radius: 50px;
         box-shadow: 0 0 20px #00000025;
         padding: 20px 0;
         display: flex;
@@ -2826,11 +2839,12 @@ position: relative;
 
     .pg-galeria .txt-apresentacao h1{
         margin-top: 0;
+        text-transform: uppercase;
     }
     .gallery-items{
         width: 300px;
         height: 300px;
-        border: 8px solid #FFF;
+        /* border: 8px solid #FFF; */
         box-shadow: 0 0 20px #00000025;
         flex-grow: 1;
         transition: .2s;
@@ -2847,6 +2861,7 @@ position: relative;
     
     .gallery-items:hover{
         transform: scale(1.05);
+        box-shadow: 0 0 20px #ffffff80;
     }
     
     img {
@@ -2859,5 +2874,310 @@ position: relative;
         padding-top: 20px;
         color: black;
         
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* PAGINA EDUCAÇÃO */
+
+
+    .educacao .titulo {
+        text-align: center;
+       
+    }
+
+   
+    .educacao .conteudo-geral{
+        padding: 0;
+    }
+    
+
+    .educacao .titulo-elementos{
+        text-align: center;
+        /* height: 150px; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: #000000;
+        /* background-image: url(./image/mosaico-video.png); */
+        background-position: center;
+        padding: 40px;
+    }
+
+    .educacao .titulo-elementos i{
+        font-size: 100px;
+        margin: 0 50px;
+        color: var(--cor-seg);
+    }
+
+    .educacao .titulo-elementos p{
+        text-align: center;
+        font-size: 16px;
+    }
+
+
+    .educacao .titulo-elementos h1{
+        color:#06bb00;
+    }
+
+   .educacao h2{
+    font-size: 28px;
+    margin: 20px 0;
+   }
+    
+    .educacao .titulo-elementos h3 {
+        color: black;
+        font-family: 'IBM Plex Mono' , sans-serif;
+        position: relative;
+        margin-top: 20px;
+        text-align: center;
+    }
+    
+    
+    .educacao .corpo-geral {
+        display: flex;
+        justify-content:center; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+  
+    .educacao .corpo-img img {
+        max-width: 320px;
+        height: auto;
+        border-radius: 8px;
+        
+    }
+
+    .educacao .corpo-img{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    
+    
+    
+   
+    .educacao .corpo-txt {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        text-align: center; 
+        font-size: 18px;
+        width: 100%;
+        padding: 30px;
+    }
+ 
+    
+    .educacao .geral {
+        text-align: center ;
+        justify-content: center;
+        
+    }
+    
+    .educacao h1 {
+        color: black;
+        font-family: 'Montserrat' , sans-serif;
+        font-size: 50px;
+        margin: 20px 0;
+        text-align: center;
+    }
+    
+    .educacao h4{
+        font-family: 'IBM Plex Mono', sans-serif;
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    
+    .educacao p{
+        max-width: 1000px; 
+        text-align: left; 
+        font-size: 18px;
+        margin: 20px 0 0 0;
+    }
+
+    .educacao a {
+        text-decoration: none;
+        color: blue;
+        font-weight: 700;
+    }
+    
+   
+    
+    .educacao .redes {
+        display: flex; 
+        justify-content: space-around; 
+        width: 100%;
+        align-items: center;
+    }
+    
+    .educacao .redes img{
+        width: 100px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* FALE CONOSCO */
+
+
+    .formulario .conteudo-geral{
+        padding: 0;
+    }
+
+    .formulario .bodyform{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background: #101026;
+    }
+    .formulario .sectionform{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 10px 45px;
+        background: #1d1d2e;
+        width: 500px;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        border-radius: 50px;
+        transition: box-shadow 0.3s ease;
+    }
+
+
+    .formulario .sectionform.focused {
+        box-shadow: 0px 0px 20px rgba(255, 217, 0, 0.8); /* Ajuste conforme desejado */
+    }
+
+    .formulario .sectionform h2{
+        color: #f5f5f5;
+        font-size: 2.5rem;
+        margin: 2rem;
+    }
+    .formulario .sectionform form{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .formulario form label{
+        color: #f5f5f5;
+        font-size: 17px;
+        margin-bottom: 4px;
+    }
+    .formulario form input{
+        padding: 15px;
+        outline: none;
+        border: 0;
+        margin-bottom: 20px;
+        font-size: 15px;
+        transition: all 0.5s;
+    }
+    .formulario form input:focus{
+        border-radius: 16px;
+        border: 2px solid #fff;
+        background-color: transparent;
+        color: #fff;
+        box-shadow: 0 0 20px rgba(255, 217, 0, 0.555);
+    }
+    .formulario form textarea{
+        padding: 10px;
+        outline: none;
+        border: 0;
+        font-size: 15px;
+        margin-bottom: 30px;
+        transition: all 0.5s;
+    }
+    .formulario form textarea:focus{
+        border-radius: 16px;
+        border: 2px solid #fff;
+        background-color: transparent;
+        color: #fff;
+        box-shadow: 0 0 20px rgb(255, 217, 0);
+    }
+    .formulario form button{
+        padding: 15px 180px;
+        cursor: pointer;
+        font-size: 16px;
+        background: transparent;
+        border: 2px solid #f5f5f5;
+        color: #f5f5f5;
+        transition: all 1s;
+        margin-bottom: 20px;
+    }
+    .formulario form button:hover{
+        background: #f5f5f5;
+        color: #101026;
+        border-radius: 16px;
+    }
+    .formulario .butaoform {
+        text-decoration: none;
+    }
+    
+    /*Página do Obrigado*/
+    
+    .formulario .mainform{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       min-height: 100vh;
+       background: #101026;
+       flex-direction: column;
+    }
+    .formulario .textform{
+        font-size: 45px;
+        color: #f5f5f5;
+        margin-bottom: 30px;
+    }
+    .formulario .paragrafo{
+        color: #f5f5f5;
+        margin-bottom: 50px;
+    }
+    .formulario .btnform{
+        padding: 15px 55px;
+        background: #f5f5f5;
+        text-decoration: none;
+        color: #101026;
+        font-size: 18px;
+        transition: all 0.5s;
+    }
+    .formulario .btnform:hover{
+        border-radius: 16px;
     }
     
