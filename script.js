@@ -1,4 +1,30 @@
 
+
+
+let btnMenu = document.getElementById('abrir-menu')
+let menu = document.getElementById('menu-mobile')
+let overlay = document.getElementById('overlay-menu')
+
+btnMenu.addEventListener('click', ()=>{
+    menu.classList.add('ativar-menu')
+})
+
+
+menu.addEventListener('click', ()=>{
+    menu.classList.remove('ativar-menu')
+})
+
+overlay.addEventListener('click', ()=>{
+    menu.classList.remove('ativar-menu')
+})
+
+
+
+
+
+
+
+
 var radio = document.querySelector('.manual-btn')
 var cont = 1
 
@@ -18,6 +44,13 @@ function proximaImg(){
     document.getElementById('radio' + cont).checked = true
 
 }
+
+
+
+
+
+
+
 
 
 
@@ -85,11 +118,27 @@ exampleCarrousel.useControls(); // Ativa os controles
 
 
 
+
+
+
+
+
+
+
+
+
 // ROLAGEM HEADER
 window.addEventListener("scroll", function() {
     let header = document.querySelector('.header');
     header.classList.toggle('rolagem', window.scrollY > 0);
 });
+
+
+
+
+
+
+
 
 
 

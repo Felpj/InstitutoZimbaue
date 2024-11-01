@@ -114,6 +114,117 @@ p{
 
 
 
+/* ESTILO MOBILE */
+
+
+.tit-mobile{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 250px;
+}
+
+.tit-mobile h1{
+    font-size: 25px;
+    margin: 10px;
+    text-transform: uppercase;
+    font-weight: 300;
+    white-space: nowrap;display: none;
+}
+
+
+
+
+.btn-abrir-menu{
+    display: none;
+}
+
+.btn-abrir-menu i{
+    font-size: 80px;
+}
+
+.menu-mobile{
+    background-color: rgb(0, 0, 0);
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999999;
+    width: 0%;
+    display: none;
+    overflow: hidden;
+    transition: .6s;
+}
+
+
+.menu-mobile.ativar-menu{
+    width: 70%;
+}
+
+
+.menu-mobile.ativar-menu ~ .overlay-menu{
+    display: block;
+}
+
+
+.menu-mobile .btn-fechar{
+    height: 100px;
+}
+
+.menu-mobile .btn-fechar i{
+    color: rgb(255, 217, 0);
+    font-size: 80px ;
+    
+}
+
+.menu-mobile nav ul{
+    text-align: right;
+    flex-direction: column;
+    font-size: 30px;
+    display: block;
+    align-items: end;
+}
+
+
+
+/* .menu-mobile nav ul li{
+   padding: 20px;
+} */
+
+
+
+.menu-mobile nav ul li a{
+    color: #fff;
+    padding: 15px 8%;
+    display: block;
+}
+
+
+.menu-mobile nav ul li a:hover{
+    background-color: rgb(255, 217, 0);
+    color: #000;
+}
+
+
+.overlay-menu{
+    background-color: #00000096;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+    display: none;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -203,7 +314,7 @@ header a.logo{
 }
 
 
-header .navbar a{
+header nav.navbar a{
     font-size: 18px;
     padding: 20px 24px;
     color: #000000;
@@ -211,7 +322,7 @@ header .navbar a{
     display: block;
 }
 
-header .navbar a:hover{
+header nav.navbar a:hover{
     color: var(--cor1);
     
 }
@@ -219,10 +330,11 @@ header .navbar a:hover{
 header .header-menu{
     display: flex;
     align-items: center;
+    white-space: nowrap;
 }
 
 
-header .navbar i{
+header nav.navbar i{
     font-size: 16px;
     align-items: center;
     justify-content: center;
@@ -315,104 +427,104 @@ header .bi-list{
 
 
 
-
-
-
-
-
-
-
-
-
-@media (max-width:1050px){
-
-    html{
-        font-size: 35%;
-    }
-
-    header{
-        padding: 3rem;
-    }
-
-    nav{
-        display: none;
-    }
-
-    
-
-}
-
-
-/* @media (max-width: 700px){
-
-    header .bi-list{
-        display: block;
-    }
-
-    header .botao button{
-        display: none;
-    }
-
-    header .navbar{
-        display: block;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background: #fff;
-        border-top: .1rem solid rgb(0, 0, 0);
-        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-        transition: clip-path 0.3s ease;
-    }
-
-    header #toggler:checked ~ .navbar{
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    }
-
-    header .navbar i{
-        display: none;
-    }
-
-    header .navbar a{
-        margin: 10px;
-        padding: 10px;
-        background: #000000;
-        color: #fff;
-        border: 2px solid rgb(0, 0, 0);
-        display: block;
-        border-radius: 20px;
-    }
-
-
-} */
-
 @media (max-width: 460px){
-    html{
+    html p{
         font-size: 40% ;
     }
+
+
+    body p{
+        font-size: 18px;
+    }
+
+
+
+    nav{
+        display: block;
+    
+    }
+
+    .btn-abrir-menu{
+        display: block;
+    }
+
+    .navbar{
+        display: none;
+    }
+
+
+    .menu-mobile{
+        display: block;
+    }
+
+
+    .tit-mobile h1{
+        display: block;
+    }
+
+
+    
+    
+    .drop-hover .drop{
+        position: unset;
+        width: 100%;
+        max-height: 300px;
+        border-radius: 0;
+        border-top: 10px solid rgb(0, 0, 0);
+        /* display: none; */
+        /* height: 300px; */
+        padding: 0;
+        overflow:auto;
+        transition: .5s;
+    }
+    
+    .drop-hover .drop a{
+        font-size: 20px;
+        padding: 15px;
+        margin: 0;
+    }
+
+    .drop-hover .drop a:hover{
+        background-color: rgb(255, 217, 0);
+    }
+
+
+
+
+    /* CONJUNTO */
 
     .conjunto .flex{
         flex-direction: column;
     }
 
     .conjunto .txt-conjunto{
-        margin: 0;
         border-radius: 40px;
-        padding: 8%;
-        margin: 10px 0;
-        height: 420px;
+        padding: 50px;
+        margin: 10px auto;
+        height: auto;
+        width: 390px;
+        
+    }
+
+    .conjunto .txt-conjunto p{
+        font-size: 20px;
     }
 
     section.conjunto{
         padding: 0 20px;
-        margin-top: 200px;
+        /* margin-top: 200px; */
     }
 
+
+
+    /* VIDEO BANNER */
+
     main .video-banner{
-        margin: 50px 0;
-        max-height: 500px;
-        height: 500px;
+        margin: 0px 0;
+        max-height: 600px;
+        height: 600px;
         padding: 20px;
+        border: none;
     }
 
     .video-banner .interface .texto h3{
@@ -420,16 +532,21 @@ header .bi-list{
     }
 
     .video-banner .interface a button{
-        width: 100px;
-        height: 40px;
-        font-size: 15px;
+        width: 150px;
+        height: 60px;
+        font-size: 20px;
     }
 
     .video-banner iframe{
         width: 100%;
-        height: 180px;
+        height: 400px;
+        margin: 20px 0;
     }
 
+
+
+
+    /* NOTICIAS */
     
 
     .noticias .fundo{
@@ -452,39 +569,82 @@ header .bi-list{
     .doacao .interface{
         padding: 20px;
     }
+    
 
+
+    /* INSTAGRAM */
 
     main .instagram {
         margin: 0 0px;
         padding: 0;
-        
+        max-height: none;
+    }
+
+
+
+    .instagram .coluna-insta .perfil .ctd-perfil{
+        width: auto;
     }
 
 
     .instagram .coluna-insta .perfil .ctd-perfil p {
-        width: 200px;
-        font-size: 250%;
+        width: auto;
+        font-size: 18px;
         margin-bottom: 0;
-        display: none;
+        word-break: break-all;
+        /* display: none; */
     }
     
 
     .instagram .ctd-insta .forma-insta {
-        width: 100px;
-        height: 100px;
+        width: 410px;
+        height: 420px;
     }
 
-    .instagram .ctd-insta .img-insta4, .instagram .ctd-insta .img-insta8{
-        display: none;
+    
+
+
+    .instagram .ctd-insta {
+        margin: 0;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
     }
 
+
+    .instagram .coluna-insta{
+        display: flex;
+        flex-direction: column;
+        align-items: normal;
+        justify-content: center;
+    }
+
+    .instagram .coluna-insta .perfil{
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+
+   
+    .instagram .coluna-insta .perfil img{
+        width: 80px;
+    }
+
+
+
+
+    /* FOOTER */
+
+
+    
 
     body footer .line-footer2{
-        flex-direction: column-reverse;
+        flex-direction: column;
         padding: 0;
         justify-content: center;
         align-items: center;
         text-align: center;
+        
     }
 
     body footer .line-footer2 .box-line-footer .inf-footer .flex{
@@ -495,10 +655,39 @@ header .bi-list{
         width: 300px;
     }
 
+
+    body footer .line-footer2 .box-line-footer .inf-footer p{
+        font-size: 18px;
+    }
+    
+
     body footer .line-footer2 .box-line-footer .email-footer p{
         width: 300px;
+        font-size: 18px;
+        line-height: 1.2;
     }
 
+    body footer .line-footer2 .box-line-footer .inf-footer .flex a i{
+        font-size: 30px;
+    }
+
+
+    body footer .line-footer2 .box-line-footer1 .flex-footer h2{
+        font-size: 24px;
+    }
+
+    body footer .line-footer2 .box-line-footer1 .menu-footer li{
+        font-size: 18px;
+    }
+
+
+    body footer .line-footer2 .box-line-footer .email-footer button{
+        padding: 15px 25px;
+        height: 50px;
+        font-size: 20px;
+        white-space: nowrap;
+
+    }
 
     body footer .line-footer2 .box-line-footer .email-footer{
         width: 300px;
@@ -516,7 +705,288 @@ header .bi-list{
     body header{
         padding: 0;
     }
+
+
+
+
+
+
+
+    /* TEXTO APRESENTAÇÃO */
+
+
+
+    main .apresentacao{
+        width: auto;
+        padding: 30px;
+        height: auto;
+        
+    }
+
+    main .apresentacao .interface .flex .txt-apresentacao{
+        padding: 0;
+    }
+
+    main .apresentacao .interface .flex .txt-apresentacao p{
+        font-size: 20px;
+    }
+
+
+
+
+    /* NOTICIAS */
+
+    .noticias .txt-apresentacao{
+        padding: 30px;
+    }
+
+
+    .noticias .txt-apresentacao .texto{
+        line-height: 1;
+        margin-bottom: 10px;
+    }
+
+
+
+
+
+    /* PESSOAS DE DESTAQUE */
+
+    .destaque{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .destaque section.texto{
+        text-align: center;
+        margin: 20px 0;
+        
+    }
+
+    .destaque section.texto h1{
+        font-size: 40px;
+        line-height: 1;
+    }
+
+
+    .destaque .card .flex{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .destaque .card{
+        height: 650px;
+        max-height: 800px;
+    }
+
+
+
+    /* GALERIA DE FOTOS */
+
+
+    .pg-galeria .interface{
+        padding: 20px;
+    }
+
+
+    .pg-galeria .interface .txt-apresentacao{
+        margin: 10px auto;
+        line-height: 1;
+        border-radius: 10px;
+        
+        
+    }
+
+    .pg-galeria .gallery-container{
+        flex-direction: column;
+    }
+
+
+
+
+
+    /* CAMPANHA */
+
+
+    .campanha .conteudo-geral{
+        width: 100%;
+    }
+
+    .campanha .conteudo-geral .interface{
+        padding: 0 20px;
+        width: 400px;
+    }
+
+
+    .campanha .conteudo-geral .flex-coluna{
+        margin: 0 20px;
+        padding: 0 20px;
+    }
+
+    .campanha .conteudo-geral .titulo_container{
+        
+        white-space: normal;
+        font-size:40px;
+        width: 400px;
+        text-align: center;
+    }
+
+    .campanha .conteudo-geral .container{
+        padding: 20px;
+    }
+
+    .campanha .conteudo-geral .container .card{
+        flex-direction: column;
+        width: 90vw;
+        height: auto;
+        max-height: none;
+        
+    }
+
+    .campanha .conteudo-geral .container .card img{
+        width: 250px;
+    }
+
+    .campanha .conteudo-geral .container .materiais{
+        flex-direction: column;
+
+    }
+
+    .campanha .conteudo-geral .container .materiais .arrumadinha h2{
+        font-size: 20px;
+    }
+
+
+
     
+
+    /* EDUCAÇÃO */
+
+    .educacao .conteudo-geral {
+        width: auto;
+    }
+
+    .educacao .titulo-elementos .flex i{
+        font-size: 50px;
+    }
+
+    .educacao .flex-coluna iframe{
+        width: 400px;
+        height: 250px;
+    }
+
+
+
+
+
+    /* NOTICIAS */
+
+
+    .pg-noticias .conteudo-txt .img-center{
+        width:auto;
+    }
+
+    .pg-noticias .conteudo-txt .img-center img{
+        width: 90vw;
+    }
+
+    .pg-noticias section.segunda-secao{
+        padding: 40px 50px;
+        
+    }
+
+    .pg-noticias section.segunda-secao h3{
+        line-height: normal;
+    }
+
+
+    .pg-noticias .conteudo-geral{
+        width: 100%;
+    }
+
+    .pg-noticias .conteudo-geral .search-bar input{
+        width: 300px;
+        padding: 10px;
+        max-width:none;
+    }
+
+    
+
+    .pg-noticias section.terceira-secao .contain-noticia a .flex{
+        flex-direction: column;
+        height: auto;
+        width: 80vw;
+    }
+
+
+    .pg-noticias #newsList{
+        width: auto;
+    }
+
+    .pg-noticias #newsList .news-item{
+        width: 90vw;
+        max-height: 400px;
+        height: 100px;
+        padding: 20px;
+        overflow: auto;
+        border-radius: 20px;
+    }
+
+    .pg-noticias #newsList .news-item h2{
+        margin-top: 50px;
+        line-height: 1;
+    }
+
+    .pg-noticias #newsList .news-item p{
+        text-align: justify;
+    }
+
+
+
+
+
+
+
+
+
+    /* DOAÇÃO */
+
+    .doacao-estrutura .texto{
+        text-align: center;
+        padding: 20px;
+        line-height: 1;
+    }
+
+    .doacao-estrutura .flex-coluna{
+        width: 90vw;
+    }
+
+
+    .pg-doacao .container{
+        flex-direction: column;
+    }
+
+
+
+
+    /* FORMULARIO */
+
+
+    .formulario .conteudo-geral{
+        width: 100%;
+    }
+
+    .formulario .conteudo-geral .bodyform section.sectionform{
+        width: 90vw;
+        margin: 40px 0;
+    }
+
+    .formulario .conteudo-geral .bodyform section.sectionform form a button{
+        padding: 15px 105px;
+    }
+
 }
 
 

@@ -78,183 +78,213 @@
 
     </header> <!--FIM HEADER-->
 
-    <div class="conteudo-geral">
 
-        <div class="search-bar">
+    <div class="pg-noticias">
+        <div class="conteudo-geral">
 
-            <input type="text" id="searchInput" placeholder="Pesquisar notícias..." onkeyup="handleEnter(event)">
-            <button onclick="searchNews()"><img src="./image/logo.png" alt="logo-pesquisa" class="logo"></button>
+            <div class="search-bar">
+
+                <input type="text" id="searchInput" placeholder="Pesquisar notícias..." onkeyup="handleEnter(event)">
+                <button onclick="searchNews()"><img src="./image/logo.png" alt="logo-pesquisa" class="logo"></button>
+            </div>
+
+
+            <div id="newsList"></div>
+            <div class="new-items"><a
+                    href="https://www.assiscity.com/local/instituto-do-negro-zimbaue-e-as-escolas-38566.html"
+                    target="_blank"></a>
+            </div>
+
         </div>
 
-
-        <div id="newsList"></div>
-        <div class="new-items"><a
-                href="https://www.assiscity.com/local/instituto-do-negro-zimbaue-e-as-escolas-38566.html"
-                target="_blank"></a>
-        </div>
-
-    </div>
-
-    <main>
+        <main>
 
 
-        <div class="banner-noticia"><div class="banner-geral"></div></div>
-        <div class="interface center flex-coluna">
-            <section class="primeira-secao txt-apresentacao">
-                <!-- <picture>
+            <div class="banner-noticia">
+                <div class="banner-geral"></div>
+            </div>
+            <div class="interface center flex-coluna">
+                <section class="primeira-secao txt-apresentacao">
+                    <!-- <picture>
                     <source media="(min-width: 700px)" srcset="./image/desktop.jpg">
                     <img src="./image/noticia-principal.jpg" alt="principal">
                 </picture> -->
 
-                <h1>O instituto do Negro de Assis "Zimbaue": Uma historia de Amor e Luta</h1>
-                <p class="txt-noticia">A data de 13 de maio de 1888 marcou a assinatura da Lei Áurea, através da qual a
-                    escravatura foi
-                    abolida
-                    no país, fazendo com que, no papel, um dos mais trágicos capítulos da história do Brasil fosse
-                    extinta.
-                </p>
+                    <h1>O instituto do Negro de Assis "Zimbaue": Uma historia de Amor e Luta</h1>
+                    <p class="txt-noticia">A data de 13 de maio de 1888 marcou a assinatura da Lei Áurea, através da
+                        qual a
+                        escravatura foi
+                        abolida
+                        no país, fazendo com que, no papel, um dos mais trágicos capítulos da história do Brasil fosse
+                        extinta.
+                    </p>
 
-                <div class="flex-coluna conteudo-txt">
+                    <div class="flex-coluna conteudo-txt">
 
-                    <p class="txt-noticia">Há 135 anos, no dia 15 de maio, mais de 700.000 homens e mulheres negros,
-                        descendentes e originários da África, conquistaram sua liberdade após anos de escravidão, um
-                        sistema opressivo e forçado que os submetia ao trabalho sem nenhum direito ou escolha,
-                        perdurando por cerca de 400 anos. Embora livres, encontraram-se marginalizados e excluídos da
-                        sociedade.</p>
+                        <p class="txt-noticia">Há 135 anos, no dia 15 de maio, mais de 700.000 homens e mulheres negros,
+                            descendentes e originários da África, conquistaram sua liberdade após anos de escravidão, um
+                            sistema opressivo e forçado que os submetia ao trabalho sem nenhum direito ou escolha,
+                            perdurando por cerca de 400 anos. Embora livres, encontraram-se marginalizados e excluídos
+                            da
+                            sociedade.</p>
 
-                    <div class="img-center">
-                        <img src="./image/concurso-doacao-2.jpeg" alt="">
-                    </div>
+                        <div class="img-center">
+                            <img src="./image/concurso-doacao-2.jpeg" alt="">
+                        </div>
                         <div id="conteudo-nt">
                             <div class="flex-coluna txt-noticia">
-                            <p >
-                                Quase 150 anos depois, situações semelhantes ainda são vivenciadas diariamente em um país onde cerca de 54% da população se autodeclara preta ou parda. Apesar de erroneamente referida como "minoria", essa parcela é frequentemente tratada como tal. Antes que você, leitor, considere este texto como exagero, pedimos que continue acompanhando as notícias, de preferência com a mente aberta. Você verá que,
-                                apenas para mencionar alguns exemplos, a maioria das pessoas perseguidas por seguranças em supermercados, revistadas "aleatoriamente" em aeroportos, ou vítimas de violência extrema são negras. Enquanto isso, em posições de chefia, liderança ou autoridade, essa representatividade é mínima, com menos de 20% ocupando tais cargos.
-                            </p>
-                            <p>  
-                                Mudar este tipo de mentalidade, conscientizar todas as pessoas de que todas as pessoas têm direitos, merecem respeito e dignidade, é a principal bandeira do Zimbauê, uma sociedade civil de assistência social, sem fins econômicos, de duração indeterminada, com sede e foro na cidade de Assis, criada em 2004.
-                            </p>    
-                                
-                            <p><a href="https://www.assiscity.com/local/o-instituto-do-negro-de-assis-zimbaue-uma-historia-de-amor-e-luta-126250.html" target="_blank"> Acesse aqui</a></p>
+                                <p>
+                                    Quase 150 anos depois, situações semelhantes ainda são vivenciadas diariamente em um
+                                    país onde cerca de 54% da população se autodeclara preta ou parda. Apesar de
+                                    erroneamente referida como "minoria", essa parcela é frequentemente tratada como
+                                    tal. Antes que você, leitor, considere este texto como exagero, pedimos que continue
+                                    acompanhando as notícias, de preferência com a mente aberta. Você verá que,
+                                    apenas para mencionar alguns exemplos, a maioria das pessoas perseguidas por
+                                    seguranças em supermercados, revistadas "aleatoriamente" em aeroportos, ou vítimas
+                                    de violência extrema são negras. Enquanto isso, em posições de chefia, liderança ou
+                                    autoridade, essa representatividade é mínima, com menos de 20% ocupando tais cargos.
+                                </p>
+                                <p>
+                                    Mudar este tipo de mentalidade, conscientizar todas as pessoas de que todas as
+                                    pessoas têm direitos, merecem respeito e dignidade, é a principal bandeira do
+                                    Zimbauê, uma sociedade civil de assistência social, sem fins econômicos, de duração
+                                    indeterminada, com sede e foro na cidade de Assis, criada em 2004.
+                                </p>
+
+                                <p><a href="https://www.assiscity.com/local/o-instituto-do-negro-de-assis-zimbaue-uma-historia-de-amor-e-luta-126250.html"
+                                        target="_blank"> Acesse aqui</a></p>
 
 
                             </div>
                         </div>
-                        
+
                         <div class="flex-center">
-                            <button id="btnLeiaMais" onclick="leiaMais()">Ler mais</button> 
+                            <button id="btnLeiaMais" onclick="leiaMais()">Ler mais</button>
                         </div>
+                </section>
+
+                <section class="segunda-secao center interface">
+                    <div class="texto">
+                        <h2>Novas Notícias</h2>
+                    </div>
+                    <div class="bb mb pb">
+                        <a href="https://www.fema.edu.br/instituto-zimbaue-lanca-14o-festival-da-consciencia-negra-em-parceria-com-a-fema/"
+                            target="_blank">
+                            <div class="color">
+                                <h3>Diretoria Regional de Ensino e Instituto Zimbauê lançam XIV Festival da Consciência
+                                    Negra
+                                </h3>
+                                <p>Na noite da última quinta-feira (23), a Fundação Educacional do Município de Assis
+                                    (FEMA)
+                                    recebeu o Instituto do negro – ZIMBAUÊ e a Diretoria Regional de Ensino do Estado de
+                                    São
+                                    Paulo para lançamento do “XIV Festival da Consciência Negra: 20 anos do Instituto do
+                                    negro –
+                                    ZIMBAUÊ”, durante a 28ª Semana de Comunicação da FEMA.</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="bb mb pb">
+                        <a href="https://deassis.educacao.sp.gov.br/diretoria-de-ensino-da-regiao-de-assis-realiza-cerimonia-de-premiacao-do-vii-concurso-em-comemoracao-ao-mes-da-consciencia-negra/"
+                            target="_blank">
+                            <div class="color">
+                                <h3>Diretoria de Ensino da Região de Assis realiza Cerimônia de Premiação do VII
+                                    Concurso em
+                                    Comemoração ao “Mês da Consciência Negra”</h3>
+                                <p>A Diretoria de Ensino da Região de Assis – DERA, em parceria com o Instituto do Negro
+                                    de
+                                    Assis – Zimbauê, Fundação Educacional do Município de Assis – FEMA e Escola de Samba
+                                    da
+                                    Vila
+                                    Operária, realizou, no último dia 17 de novembro, a Cerimônia de Premiação do VII
+                                    Concurso
+                                    em Comemoração ao “Mês da Consciência Negra” </p>
+                            </div>
+                        </a>
+                    </div>
+
+                </section>
+
+                <section class="terceira-secao center interface">
+                    <div class="contain-noticia">
+                        <a href="https://diariodeassis.com.br/diretoria-regional-de-ensino-e-instituto-zimbaue-lancam-xiv-festival-da-consciencia-negra-em-parceria-com-a-fema/"
+                            target="_blank">
+                            <div class="flex">
+                                <div>
+                                    <img src="./image/zimzim.jpg" alt="pessoas-cantando">
+                                </div>
+                                <div class="center-left">
+                                    <strong>01</strong>
+                                    <h2>Diretoria Regional de Ensino e Instituto Zimbauê lançam XIV Festival da
+                                        Consciência
+                                        Negra em
+                                        parceria com a FEMA</h2>
+                                    <p>Programa celebra 20 anos do Instituto Zimbauê e traz novo formato para comemorar
+                                        o
+                                        Mês da
+                                        Consciência Negra </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div class="contain-noticia">
+                        <a href="https://www.assis.sp.leg.br/imprensa/noticias/senhor-claudomiro-de-souza-e-homenageado-pela-camara-municipal-com-diploma-de-merito-zumbi-dos-palmares#:~:text=dos%20Palmares''-,Senhor%20Claudomiro%20de%20Souza%20%C3%A9%20homenageado%20pela%20C%C3%A2mara%20Municipal%20com,M%C3%A9rito%20%22Zumbi%20dos%20Palmares''&text=A%20C%C3%A2mara%20Municipal%20de%20Assis,ao%20Senhor%20Claudomiro%20de%20Souza."
+                            target="_blank">
+                            <div class="flex">
+                                <div>
+                                    <img src="./image/zimzim2.jpg" alt="pessoas-sentada">
+                                </div>
+                                <div class="center-left">
+                                    <strong>02</strong>
+                                    <h2>Senhor Claudomiro de Souza é homenageado pela Câmara Municipal com Diploma de
+                                        Mérito
+                                        "Zumbi
+                                        dos Palmares''</h2>
+                                    <p>A cerimônia foi presidida pelo vereador Francisco de Assis da Silva (Chico
+                                        Panela)
+                                        juntamente
+                                        com a mesa diretora composta pelas seguintes autoridades: Senhora Mônica da
+                                        Silva,
+                                        presidente do Instituto do Negro Zimbauê e Dr. Sérgio Frederico, Advogado e
+                                        membro
+                                        do
+                                        Instituto do Negro Zimbauê. O Homenageado e sua esposa Marlene Alves também
+                                        ficaram
+                                        na mesa,
+                                        ao lado do Presidente.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div class="contain-noticia">
+                        <a href="https://www.assiscity.com/local/camara-de-assis-entrega-diploma-de-merito-zumbi-dos-palmares-85211.html"
+                            target="_blank">
+                            <div class="flex">
+                                <div>
+                                    <img src="./image/zimzim3.jpg" alt="pessoas-falando">
+                                </div>
+                                <div class="center-left">
+                                    <strong>03</strong>
+                                    <h2>Câmara de Assis entrega Diploma de Mérito Zumbi dos Palmares</h2>
+                                    <p>Como acontece há vários anos, a Câmara Municipal de Assis e o Instituto do Negro
+                                        Zimbauê,
+                                        premiam com o Diploma de Mérito Zumbi dos Palmares</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+            </div>
+
             </section>
-
-            <section class="segunda-secao center interface">
-                <div class="texto">
-                    <h2>Novas Notícias</h2>
-                </div>
-                <div class="bb mb pb">
-                    <a href="https://www.fema.edu.br/instituto-zimbaue-lanca-14o-festival-da-consciencia-negra-em-parceria-com-a-fema/"
-                        target="_blank">
-                        <div class="color">
-                            <h3>Diretoria Regional de Ensino e Instituto Zimbauê lançam XIV Festival da Consciência
-                                Negra
-                            </h3>
-                            <p>Na noite da última quinta-feira (23), a Fundação Educacional do Município de Assis (FEMA)
-                                recebeu o Instituto do negro – ZIMBAUÊ e a Diretoria Regional de Ensino do Estado de São
-                                Paulo para lançamento do “XIV Festival da Consciência Negra: 20 anos do Instituto do
-                                negro –
-                                ZIMBAUÊ”, durante a 28ª Semana de Comunicação da FEMA.</p>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="bb mb pb">
-                    <a href="https://deassis.educacao.sp.gov.br/diretoria-de-ensino-da-regiao-de-assis-realiza-cerimonia-de-premiacao-do-vii-concurso-em-comemoracao-ao-mes-da-consciencia-negra/"
-                        target="_blank">
-                        <div class="color">
-                            <h3>Diretoria de Ensino da Região de Assis realiza Cerimônia de Premiação do VII Concurso em
-                                Comemoração ao “Mês da Consciência Negra”</h3>
-                            <p>A Diretoria de Ensino da Região de Assis – DERA, em parceria com o Instituto do Negro de
-                                Assis – Zimbauê, Fundação Educacional do Município de Assis – FEMA e Escola de Samba da
-                                Vila
-                                Operária, realizou, no último dia 17 de novembro, a Cerimônia de Premiação do VII
-                                Concurso
-                                em Comemoração ao “Mês da Consciência Negra” </p>
-                        </div>
-                    </a>
-                </div>
-
-            </section>
-
-            <section class="terceira-secao center interface">
-                <div>
-                    <a href="https://diariodeassis.com.br/diretoria-regional-de-ensino-e-instituto-zimbaue-lancam-xiv-festival-da-consciencia-negra-em-parceria-com-a-fema/"
-                        target="_blank">
-                        <div class="flex">
-                            <div>
-                                <img src="./image/zimzim.jpg" alt="pessoas-cantando">
-                            </div>
-                            <div class="center-left">
-                                <strong>01</strong>
-                                <h2>Diretoria Regional de Ensino e Instituto Zimbauê lançam XIV Festival da Consciência
-                                    Negra em
-                                    parceria com a FEMA</h2>
-                                <p>Programa celebra 20 anos do Instituto Zimbauê e traz novo formato para comemorar o
-                                    Mês da
-                                    Consciência Negra </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
+        </main>
+    </div>
 
 
-                <div>
-                    <a href="https://www.assis.sp.leg.br/imprensa/noticias/senhor-claudomiro-de-souza-e-homenageado-pela-camara-municipal-com-diploma-de-merito-zumbi-dos-palmares#:~:text=dos%20Palmares''-,Senhor%20Claudomiro%20de%20Souza%20%C3%A9%20homenageado%20pela%20C%C3%A2mara%20Municipal%20com,M%C3%A9rito%20%22Zumbi%20dos%20Palmares''&text=A%20C%C3%A2mara%20Municipal%20de%20Assis,ao%20Senhor%20Claudomiro%20de%20Souza."
-                        target="_blank">
-                        <div class="flex">
-                            <div>
-                                <img src="./image/zimzim2.jpg" alt="pessoas-sentada">
-                            </div>
-                            <div class="center-left">
-                                <strong>02</strong>
-                                <h2>Senhor Claudomiro de Souza é homenageado pela Câmara Municipal com Diploma de Mérito
-                                    "Zumbi
-                                    dos Palmares''</h2>
-                                <p>A cerimônia foi presidida pelo vereador Francisco de Assis da Silva (Chico Panela)
-                                    juntamente
-                                    com a mesa diretora composta pelas seguintes autoridades: Senhora Mônica da Silva,
-                                    presidente do Instituto do Negro Zimbauê e Dr. Sérgio Frederico, Advogado e membro
-                                    do
-                                    Instituto do Negro Zimbauê. O Homenageado e sua esposa Marlene Alves também ficaram
-                                    na mesa,
-                                    ao lado do Presidente.</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-
-                <div>
-                    <a href="https://www.assiscity.com/local/camara-de-assis-entrega-diploma-de-merito-zumbi-dos-palmares-85211.html"
-                        target="_blank">
-                        <div class="flex">
-                            <div>
-                                <img src="./image/zimzim3.jpg" alt="pessoas-falando">
-                            </div>
-                            <div class="center-left">
-                                <strong>03</strong>
-                                <h2>Câmara de Assis entrega Diploma de Mérito Zumbi dos Palmares</h2>
-                                <p>Como acontece há vários anos, a Câmara Municipal de Assis e o Instituto do Negro
-                                    Zimbauê,
-                                    premiam com o Diploma de Mérito Zumbi dos Palmares</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-        </div>
-
-        </section>
-        </div>
-        </div>
-    </main>
 
 
 
