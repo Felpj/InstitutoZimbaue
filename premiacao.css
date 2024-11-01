@@ -1,0 +1,920 @@
+/* Definição das Variáveis de Cores */
+:root {
+    --cor1: rgb(255, 217, 0);
+    --cor-pri: rgb(255, 174, 0);
+    --cor-seg: #fd6500;
+    --cor-ter: #06bb00;
+    --almost-white: #fffdfa;
+    --dark-blue: #00001a;
+    --gunnmetal: #5e607a;
+    --vermillion: #f15051;
+    --yellow: #e9aa52;
+    --silver: #c5c6ce;
+    --verde: #40ff3af8;
+    --laranja: #ff9249;
+    --preto: #000;
+    --cinza: #ebebeb;
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: var(--dark-blue);
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+    
+}
+
+/* Banner */
+.banner {
+    background-color: var(--dark-blue);
+    color: var(--cor1);
+    text-align: center;
+    padding: 100px 20px;
+    background-image: url('./image/insta1.jpg'); 
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-top: 150px;
+}
+
+.banner::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 26, 0.7); /* Sobreposição para melhor legibilidade */
+}
+
+.banner .container {
+    position: relative;
+    z-index: 1;
+}
+
+.banner h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.banner p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: var(--almost-white);
+}
+
+.banner .btn {
+    background-color: var(--vermillion);
+    color: var(--almost-white);
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.banner .btn:hover {
+    background-color: var(--laranja);
+}
+
+/* Sobre a Premiação */
+.sobre {
+    background-color: var(--almost-white);
+    padding: 60px 0;
+}
+
+.sobre h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--cor-pri);
+}
+
+.sobre p {
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    color: var(--gunnmetal);
+}
+
+.sobre .media {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.sobre .media img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+
+/* Personalidades Homenageadas */
+.personalidades {
+    background-color: var(--almost-white);
+    padding: 60px 0;
+}
+
+.personalidades h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--cor-pri);
+}
+
+.personalidades .filtros {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.personalidades .filtro {
+    background-color: var(--cor-seg);
+    color: var(--almost-white);
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.personalidades .filtro:hover,
+.personalidades .filtro.active {
+    background-color: var(--cor-pri);
+}
+
+.personalidades .galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.personalidades .personalidade {
+    background-color: var(--almost-white);
+    border: 1px solid var(--silver);
+    border-radius: 10px;
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.personalidades .personalidade:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.personalidades .personalidade img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.personalidades .personalidade h3 {
+    color: var(--dark-blue);
+    margin: 15px 0 10px 0;
+}
+
+.personalidades .personalidade p {
+    color: var(--gunnmetal);
+    margin-bottom: 15px;
+}
+
+.personalidades .personalidade .btn {
+    background-color: var(--cor-seg);
+    color: var(--almost-white);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.personalidades .personalidade .btn:hover {
+    background-color: var(--almost-white);
+    color: var(--cor-seg);
+    border: 1px solid var(--cor-seg);
+}
+
+/* Como Participar ou Indicar */
+.participar {
+    background-color: var(--verde);
+    color: var(--almost-white);
+    padding: 60px 0;
+}
+
+.participar h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.participar p {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+}
+
+.form-indicacao {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-indicacao label {
+    font-weight: bold;
+}
+
+.form-indicacao input,
+.form-indicacao select,
+.form-indicacao textarea {
+    padding: 10px;
+    border: 1px solid var(--cinza);
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.form-indicacao button {
+    background-color: var(--vermillion);
+    color: var(--almost-white);
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-indicacao button:hover {
+    background-color: var(--laranja);
+}
+
+/* HEADER */
+header{
+    background: #fff;
+    width: 100%;
+    box-shadow: 0 4px 4px #0001;
+    z-index: 100000;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+header .logo img{
+    width: 80px;
+    transition: .5s;
+}
+
+header.rolagem .container{
+    height: 80px;
+}
+
+header.rolagem .logo{
+    align-items: center;
+    height: 60px;
+}
+
+header.rolagem .container .logo img{
+    width: 60px;
+}
+
+header.rolagem .topo{
+    height: 25px;
+}
+
+.topo{
+    height: 55px;
+    background: linear-gradient(240deg, yellow, rgb(255,217,0),rgb(255, 174, 0));
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 0 20px;
+    
+}
+
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: auto; 
+    padding: 10px 8%;
+}
+
+header .logo{
+    align-items: center;
+    height: 80px;
+}
+
+header a.logo{
+    align-items: center;
+    margin: 0;
+}
+
+header nav.navbar a{
+    font-size: 18px;
+    padding: 20px 24px;
+    color: #000000;
+    text-transform: uppercase;
+    display: block;
+}
+
+header nav.navbar a:hover{
+    color: var(--cor1);
+}
+
+.header .header-menu{
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+header nav.navbar i{
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+    display: contents;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+}
+
+.drop-hover{
+    position: relative;
+}
+
+.drop-hover .drop{
+    position: absolute;
+    z-index: 200;
+    width: 250px;
+    background-color: #ffffff;
+    padding: 10px 5px;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    box-shadow: 0 10px 15px #00000025;
+    border-radius: 20px;
+    border-top: 3px solid rgb(255, 217, 0);
+}
+
+.drop-hover:hover .drop{
+    height: 245px;
+    opacity: 1;
+}
+
+.drop-hover .drop a{
+    background-color: #ffffff;
+    margin: 10px 2px;
+    font-size: 15px;
+    padding: 10px 15px;
+    color: #000;
+    font-weight: 500;
+    border-radius: 10px;
+}
+
+.drop-hover .drop a:hover{
+    background-color: #f1f1f1;
+    color: #000;
+}
+
+header #toggler{
+    display: none;
+}
+
+header .bi-list{
+    font-size: 40px;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    /* border: .1rem solid #000; */
+    /* display: none; */
+}
+
+/* FOOTER */
+footer{
+    background-color: #000000;
+    color: #fff;
+    padding: 25px 0;
+}
+
+footer .line-footer1{
+    text-align: center;
+    border-bottom: 3px solid #fff;
+    padding-bottom: 50px;
+}
+
+.line-footer1 h2{
+    font-size: 28px;
+}
+
+.line-footer1 p{
+    font-size: 18px;
+    margin: 10px 0 30px 0;
+}
+
+.line-footer1 form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line-footer1 form input[type=email]{
+    width: 300px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 10px 0 0 10px;
+    color: #fff;
+    padding: 10px;
+    outline: 0;
+    font-size: 16px;
+    text-transform: lowercase;
+}
+
+.line-footer1 form input[type=submit]{
+    width: 120px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    border: 0;
+    border-radius: 0 10px 10px 0;
+    color: #000000;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.line-footer1 form input[type=submit]:hover{
+    background-color: #33ff00;
+    color: #000000;
+}
+
+footer .line-footer2{
+    padding: 0px 100px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    /* border-bottom: 3px solid #fff; */
+}
+
+.line-footer2 .box-line-footer img{
+    width: 100px;
+}
+
+.line-footer2 .box-line-footer .flex i{
+    font-size: 20px;
+    margin-right:20px;
+}
+
+.line-footer2 .box-line-footer .inf-footer p{
+    margin-top: 10px;
+    font-size: 12px;
+    width: 300px;
+}
+
+footer .line-footer2 .box-line-footer{
+    width: calc(100% / 5);
+}
+
+footer .box-line-footer img{
+    max-width: 250px;
+    margin-bottom: 10px;
+}
+
+.line-footer2 .box-line-footer .flex{
+    justify-content:left;
+}
+
+section.line-footer2 .box-line-footer{
+    margin: 10px 40px;
+    width: 500px;
+}
+
+.line-footer2 .box-line-footer h3{
+    color: rgb(255, 217, 0);
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.box-line-footer .btn-redes a{
+    display: inline;
+}
+
+.box-line-footer .btn-redes button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 20px;
+    background-color: transparent;
+    border: 3px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.box-line-footer .btn-redes button:hover{
+    background-color: rgb(255, 217, 0);
+    color: #000000;
+}
+
+.line-footer2 .box-line-footer .flex-footer h2{
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(255, 217, 0);
+}
+
+.menu-footer{
+    padding: 0;
+    margin-top: 10px;
+}
+
+.menu-footer ul li{
+    margin-bottom: 10px;
+    font-weight: 500;
+    align-items: center;
+}
+
+.menu-footer ul li::marker{
+    color: rgb(255, 217, 0); /* Cor da bolinha */
+}
+
+.menu-footer ul{
+    list-style-position: inside;
+}
+
+.email-footer{
+    margin-top: 50px;
+    width: 500px;
+}
+
+.email-footer p{
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+.email-footer button{
+    margin: 0;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    padding: 0px 10px;
+    height: 35px;
+    font-size: 16px;
+    max-width: 400px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    transition: .5s ease-in-out;
+    color: #fff;
+}
+
+.email-footer button:hover{
+    transform: translateX(10px);
+    border-color: transparent;
+}
+
+.email-footer i{
+    opacity: 0;
+    margin: 0px;
+    transition: .5s;
+    transform: translateX(-30px);
+}
+
+.email-footer button:hover i{
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+.line-footer3{
+    margin: 40px 0;
+}
+
+.line-footer3 p{
+    font-size: 10px;
+    margin: 0;
+    width: 400px;
+}
+
+.line-footer3 p a{
+    font-size: 10px;
+    color: rgb(255, 217, 0);
+}
+
+.premiados {
+    padding: 60px 0;
+    background-color: var(--yellow);
+}
+
+.premiados h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--preto);
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.premiado-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.premiado-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.premiado-image img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.premiado-text {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.premiado-text h3 {
+    font-size: 1.5rem;
+    color: var(--cor-pri);
+    margin-bottom: 10px;
+}
+
+.premiado-text h4 {
+    font-size: 1.2rem;
+    color: var(--dark-blue);
+    margin-bottom: 10px;
+}
+
+.premiado-text p {
+    font-size: 1rem;
+    color: var(--gunnmetal);
+}
+
+.premiado-card.reverse {
+    flex-direction: row-reverse;
+    background-color: var(--cinza);
+}
+
+.premiado-card.reverse .premiado-text {
+    margin-left: 0;
+    margin-right: 20px;
+}
+
+.premiado-card.reverse h3 {
+    color: var(--cor-seg);
+}
+
+.premiado-card.reverse .premiado-text h4 {
+    color: var(--dark-blue);
+}
+
+.premiado-card.reverse .premiado-text p {
+    color: var(--gunnmetal);
+}
+
+.card-2023 {
+    background-color: #ffffff;
+}
+
+.card-2022 {
+    background-color: #f0f0f0;
+}
+
+.card-2021 {
+    background-color: #ffffff;
+}
+
+.card-2020 {
+    background-color: #f0f0f0;
+}
+
+/* Responsividade geral para dispositivos móveis */
+@media (max-width: 768px) {
+    /* Container */
+    .container {
+        width: 100%; /* Garante que o container preencha toda a largura */
+        padding: 0 15px; /* Adiciona um pouco de padding nas laterais */
+    }
+
+    /* Banner */
+    .banner {
+        padding: 50px 15px; /* Ajusta o padding */
+    }
+    
+    .banner h1 {
+        font-size: 2em;
+    }
+    
+    .banner p {
+        font-size: 1em;
+    }
+    
+    .banner .btn {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+
+    /* Sobre a Premiação */
+    .sobre {
+        padding: 40px 15px;
+    }
+
+    .sobre h2 {
+        font-size: 1.8rem;
+    }
+
+    .sobre p {
+        font-size: 0.9em;
+    }
+
+    /* Personalidades Homenageadas */
+    .personalidades {
+        padding: 40px 15px;
+    }
+
+    .personalidades h2 {
+        font-size: 2rem;
+    }
+
+    .personalidades .personalidade {
+        width: 100%; /* Expande a largura */
+        margin-bottom: 20px;
+    }
+
+    /* Seção Premiados */
+    .premiado-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+        width: 100%; /* Garante que o card preencha toda a largura */
+    }
+
+    .premiado-card.reverse {
+        flex-direction: column;
+        width: 100%; /* Expande a largura */
+    }
+
+    .premiado-image img {
+        max-width: 100%;
+    }
+
+    .premiado-text {
+        margin: 15px 0 0 0;
+    }
+    
+    .premiado-text h3, 
+    .premiado-text h4, 
+    .premiado-text p {
+        font-size: 0.9em;
+    }
+
+    /* Como Participar ou Indicar */
+    .participar {
+        padding: 40px 15px;
+    }
+    
+    .participar h2 {
+        font-size: 1.8rem;
+    }
+    
+    .form-indicacao {
+        width: 100%; /* Expande a largura */
+        padding: 10px;
+    }
+    
+    .form-indicacao input, 
+    .form-indicacao select, 
+    .form-indicacao textarea {
+        font-size: 0.9em;
+        width: 100%; /* Garante que os inputs preencham a largura */
+    }
+
+    /* Footer */
+    footer {
+        padding: 20px 15px;
+    }
+
+    footer .line-footer1 h2 {
+        font-size: 1.5rem;
+    }
+
+    footer .line-footer1 p {
+        font-size: 0.9em;
+    }
+    
+    footer .line-footer2 {
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .box-line-footer {
+        width: 100%; /* Expande a largura */
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+/* Responsividade para dispositivos menores (máx. 460px) */
+@media (max-width: 460px) {
+    /* Header */
+    header .navbar {
+        display: none;
+    }
+    
+    header .bi-list {
+        display: block;
+    }
+
+    .drop-hover .drop {
+        width: 100%; /* Expande a largura */
+        max-height: 300px;
+        border-radius: 0;
+        border-top: 10px solid rgb(0, 0, 0);
+        padding: 0;
+        overflow: auto;
+    }
+    
+    .drop-hover .drop a {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .edicoes .cards,
+    .personalidades .galeria {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Responsividade para Header */
+@media (max-width: 460px){
+    header .navbar{
+        display: none;
+    }
+
+    header .bi-list{
+        display: block;
+    }
+
+    .drop-hover .drop{
+        position: unset;
+        width: 100%;
+        max-height: 300px;
+        border-radius: 0;
+        border-top: 10px solid rgb(0, 0, 0);
+        padding: 0;
+        overflow: auto;
+        transition: .5s;
+    }
+    
+    .drop-hover .drop a{
+        font-size: 20px;
+        padding: 15px;
+        margin: 0;
+    }
+
+    .drop-hover .drop a:hover{
+        background-color: rgb(255, 217, 0);
+    }
+} 
