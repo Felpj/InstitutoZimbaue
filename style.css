@@ -254,18 +254,18 @@ p{
 
 /* HEADER */
 .topo{
-    height: 55px;
+    height: 50px;
     background: linear-gradient(240deg, yellow, rgb(255,217,0),rgb(255, 174, 0));
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: end;
-    padding: 0 20px;
+    padding: 0 100px;
     
 }
 
 .topo .redes-topo i{
-    font-size: 25px;
+    font-size: 20px;
     margin-left: 15px;
     transition: .5s;
 }
@@ -741,11 +741,12 @@ header .bi-list{
         width: auto;
         padding: 30px;
         height: auto;
-        
+        max-height: 1000px;
     }
 
     main .apresentacao .interface .flex .txt-apresentacao{
         padding: 0;
+        height: auto;
     }
 
     main .apresentacao .interface .flex .txt-apresentacao p{
@@ -1263,7 +1264,8 @@ main{
     width: 100vw;
     border-radius: 0 0 50% 50%;
     /* box-shadow: 0 50px 50px -80px; */
-    height: 300px;
+    height: auto;
+    max-height: 400px;
 }
 
 .apresentacao .txt-apresentacao h1{
@@ -3697,6 +3699,7 @@ position: relative;
         box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
         border-radius: 50px;
         transition: box-shadow 0.3s ease;
+        margin: 150px;
     }
 
 

@@ -47,14 +47,6 @@ function proximaImg(){
 
 
 
-
-
-
-
-
-
-
-
 const noticiaContainer = document.querySelector('.ctd-noticias');
 const noticiaControleContainer = document.querySelector('.noticia-controle');
 const noticiaControle = ['previous', 'next'];
