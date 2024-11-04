@@ -27,6 +27,7 @@
     --laranja:#ff9249;
     --preto: #000;
     --cinza:#ebebeb;
+    --branco: #fff;
 }
 
 
@@ -476,13 +477,28 @@ header .bi-list{
 
 
     .tit-mobile h1{
-        display: block;
+        display: none;
     }
 
     .topo .redes-topo{
         display: none;
     }
 
+
+    body .banner-geral{
+        width: 100%;
+    }
+
+    body .banner-geral img{
+        width: 100%;
+    }
+
+
+
+
+    header .container {
+        padding: 10px 4%;
+    }
 
     
     
@@ -836,6 +852,14 @@ header .bi-list{
         width: 100%;
     }
 
+    .campanha .conteudo-geral .banner-geral{
+        background-image: url(./image/bc1.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 0;
+    }
+
     .campanha .conteudo-geral .interface{
         padding: 0 20px;
         width: 400px;
@@ -886,6 +910,14 @@ header .bi-list{
 
     /* EDUCAÇÃO */
 
+
+    .educacao .conteudo-geral .banner-geral{
+        background-image: url(./image/be1.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
     .educacao .conteudo-geral {
         width: auto;
     }
@@ -905,6 +937,13 @@ header .bi-list{
 
     /* NOTICIAS */
 
+
+    .pg-noticias .banner-noticia .banner-geral{
+        background-image: url(./image/bn1.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 
     .pg-noticias .conteudo-txt .img-center{
         width:auto;
@@ -975,6 +1014,13 @@ header .bi-list{
 
     /* DOAÇÃO */
 
+    .donation .conteudo-geral .banner-geral{
+        background-image: url(./image/bd1.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
     .doacao-estrutura .texto{
         text-align: center;
         padding: 20px;
@@ -1009,6 +1055,104 @@ header .bi-list{
         padding: 15px 105px;
     }
 
+
+
+
+
+
+
+    /* PREMIACAO */
+
+    .premiacao .premiado-card{
+        flex-direction: column;
+    }
+
+
+    .premiacao section.banner .container{
+        padding: 20px;
+        
+    }
+
+    .premiacao section.banner .container h1{
+        font-size: 40px;
+    }
+
+    .premiacao .premiado-card.reverse{
+        display: block;
+    }
+
+
+    .premiacao section.participar .form-indicacao input{
+        max-width: 90vw;
+    }
+    .premiacao section.participar .form-indicacao select{
+        max-width: 90vw;
+    }
+    .premiacao section.participar .form-indicacao textarea{
+        max-width: 90vw;
+    }
+
+
+
+
+
+
+
+
+    /* SOBRE E HISTORIA */
+    
+
+    .sobre-historia .conteudo-geral .banner-geral{
+        background-image: url(./image/bs1\ \(1\).png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: auto;
+    }
+
+    .sobre-historia .interface .txt-apresentacao img{
+        max-width: 100%;
+        width: 80vw;
+    }
+
+    .sobre-historia .conteudo-geral .txt-apresentacao .texto h1{
+        font-size: 40px;
+        
+    }
+
+
+    .sobre-historia .interface .txt-apresentacao .conatiner{
+        display: block;
+    }
+
+
+    .sobre-historia .interface section.conjunto .flex .txt-conjunto{
+        width: 90vw;
+    }
+
+
+
+
+
+
+
+
+    /* SLIDE*/
+
+
+    section.slider .banner1{
+        background-image: url(./image/bp1.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    section.slider .banner2{
+        background-image: url(./image/bp2.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
 
 
@@ -1045,8 +1189,9 @@ header .bi-list{
             #999999 75%, 
             #b3b3b3 87.5%, 
             #e2dfdf 100%);
-    
+    background-image: url(./image/banner-banner2.png);
             height: 400px;
+            
 }
 
 .banner2{
@@ -1061,7 +1206,7 @@ header .bi-list{
             #ff9900 75%, 
             #ff8c00 87.5%, 
             #fd6500 100%);
-    
+    background-image: url(./image/banner-banner1.png);
             height: 400px;
 }
 
@@ -1756,7 +1901,7 @@ footer .line-footer2{
     padding: 0px 100px;
     display: flex;
     justify-content: space-between;
-    font-size: 12px;
+    font-size: 14px;
     /* border-bottom: 3px solid #fff; */
 }
 
@@ -1770,10 +1915,14 @@ footer .line-footer2{
     margin-right:20px;
 }
 
+.line-footer2 ul li a:hover, .line-footer2 a i:hover {
+    color: gray;
+}
+
 
 .line-footer2 .box-line-footer .inf-footer p{
     margin-top: 10px;
-    font-size: 12px;
+    font-size: 14px;
     width: 300px;
 }
 
@@ -2435,7 +2584,19 @@ iframe{
 
 
 
-/* DOAÇÃO */
+/* PAGINA DOAÇÃO */
+
+
+.donation .banner-geral{
+    background-image: url(./image/banner-doação.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
 .pg-doacao .card {
     width: 300px;
     height: 450px;
@@ -3519,6 +3680,13 @@ position: relative;
     /* PAGINA EDUCAÇÃO */
 
 
+    .educacao .banner-geral{
+        background-image: url(./image/banner-educação.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
     .educacao .titulo {
         text-align: center;
        
@@ -3802,4 +3970,495 @@ position: relative;
     .formulario .btnform:hover{
         border-radius: 16px;
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* PREMIAÇÃO */
+
+
     
+
+/* Container */
+.premiacao .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Banner */
+.premiacao .banner {
+    background-color: var(--dark-blue);
+    color: var(--cor1);
+    text-align: center;
+    padding: 100px 20px;
+    background-image: url('./image/insta1.jpg'); 
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-top: 150px;
+}
+
+.premiacao .banner::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 26, 0.7); /* Sobreposição para melhor legibilidade */
+}
+
+.premiacao .banner .container {
+    position: relative;
+    z-index: 1;
+}
+
+.premiacao .banner h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.premiacao .banner p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: var(--almost-white);
+}
+
+.premiacao .banner .btn {
+    background-color: var(--vermillion);
+    color: var(--almost-white);
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.premiacao .banner .btn:hover {
+    background-color: var(--laranja);
+}
+
+/* Sobre a Premiação */
+.premiacao section.sobre {
+    background-color: var(--almost-white);
+    padding: 60px 0;
+}
+
+.premiacao section.sobre h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--cor-pri);
+    font-size: 35px;
+}
+
+.premiacao section.sobre p {
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    color: var(--gunnmetal);
+}
+
+.premiacao section.sobre .media {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.premiacao section.sobre .media img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+
+/* Personalidades Homenageadas */
+.premiacao .personalidades {
+    background-color: var(--almost-white);
+    padding: 60px 0;
+}
+
+.premiacao .personalidades h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--cor-pri);
+}
+
+.premiacao .personalidades .filtros {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.premiacao .personalidades .filtro {
+    background-color: var(--cor-seg);
+    color: var(--almost-white);
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.premiacao .personalidades .filtro:hover,
+.premiacao .personalidades .filtro.active {
+    background-color: var(--cor-pri);
+}
+
+.premiacao .personalidades .galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.premiacao .personalidades .personalidade {
+    background-color: var(--almost-white);
+    border: 1px solid var(--silver);
+    border-radius: 10px;
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.premiacao .personalidades .personalidade:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.premiacao .personalidades .personalidade img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.premiacao .personalidades .personalidade h3 {
+    color: var(--dark-blue);
+    margin: 15px 0 10px 0;
+}
+
+.premiacao .personalidades .personalidade p {
+    color: var(--gunnmetal);
+    margin-bottom: 15px;
+}
+
+.premiacao .personalidades .personalidade .btn {
+    background-color: var(--cor-seg);
+    color: var(--almost-white);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.premiacao .personalidades .personalidade .btn:hover {
+    background-color: var(--almost-white);
+    color: var(--cor-seg);
+    border: 1px solid var(--cor-seg);
+}
+
+/* Como Participar ou Indicar */
+.premiacao .participar {
+    background-color: var(--cor-ter);
+    color: var(--almost-white);
+    padding: 60px 0;
+}
+
+.premiacao .participar h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 35px;
+}
+
+.premiacao .participar p {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+}
+
+.premiacao .form-indicacao {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.premiacao .form-indicacao label {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.premiacao .form-indicacao input,
+.premiacao .form-indicacao select,
+.premiacao .form-indicacao textarea {
+    padding: 10px;
+    border: 1px solid var(--cinza);
+    border-radius: 5px;
+    font-size: 16px;
+    max-width: 400px;
+    width: 400px;
+}
+
+.premiacao .form-indicacao button {
+    background-color: var(--vermillion);
+    color: var(--almost-white);
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.premiacao .form-indicacao button:hover {
+    background-color: var(--laranja);
+}
+
+
+
+
+.premiacao .premiados {
+    padding: 60px 0;
+    background-color: var(--cor-pri);
+}
+
+.premiacao .premiados h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--preto);
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+.premiacao .premiado-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    padding: 40px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.premiacao .premiado-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.premiacao .premiado-image img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.premiacao .premiado-text {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.premiacao .premiado-text h3 {
+    font-size: 28px;
+    color: var(--cor-pri);
+    margin-bottom: 10px;
+}
+
+.premiacao .premiado-text h4 {
+    font-size: 25px;
+    color: var(--dark-blue);
+    margin-bottom: 10px;
+}
+
+.premiacao .premiado-text p {
+    font-size: 16px;
+    color: var(--gunnmetal);
+}
+
+.premiacao .premiado-card.reverse {
+    flex-direction: row-reverse;
+    background-color: var(--dark-blue);
+    
+}
+
+.premiacao .premiado-card.reverse .premiado-text {
+    margin-left: 0;
+    margin-right: 20px;
+}
+
+.premiacao .premiado-card.reverse h3 {
+    color: var(--cor-seg);
+}
+
+.premiacao .premiado-card.reverse .premiado-text h4 {
+    color: var(--branco);
+}
+
+.premiacao .premiado-card.reverse .premiado-text p {
+    color: var(--gunnmetal);
+}
+
+.premiacao .card-2023 {
+    background-color: #ffffff;
+}
+
+.premiacao .card-2022 {
+    background-color: #f0f0f0;
+}
+
+.premiacao .card-2021 {
+    background-color: #ffffff;
+}
+
+.premiacao .card-2020 {
+    background-color: #f0f0f0;
+}
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SOBRE E NOSSA HISTORIA */
+
+
+.sobre-historia .banner-geral{
+    background-image: url(./image/banner-inicial.png);
+}
+
+
+.sobre-historia .interface{
+    background-color: #fff;
+}
+
+
+.sobre-historia .background-lateral{
+    background: linear-gradient(#000000,  var(--cor-pri) ,var(--cor-seg), var(--cor-ter));
+    /* background-image: url(./image/mosaico-video.png); */
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    background-size: contain;
+    /* border-top: 10px solid rgb(255, 217, 0); */
+}
+
+.sobre-historia .txt-apresentacao .texto{
+    /* box-shadow: 0 5px 20px #00000025; */
+    border-radius: 50px;
+    margin: 30px;
+    text-align: center;
+}
+
+.sobre-historia .txt-apresentacao img{
+    width: 500px;
+    margin: 30px ;
+}
+
+
+.sobre-historia .txt-apresentacao .texto h1{
+    text-transform: uppercase;
+    font-size: 50px;
+    margin: 30px;
+}
+
+.sobre-historia .txt-apresentacao .flex{
+    margin: 40px 0;
+}
+
+.sobre-historia .txt-apresentacao p{
+    margin: 40px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* GRAFICOS */
+
+
+
+.conatiner{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 200px;
+}
+
+
+.chart{
+    padding: 30px;
+    border: 5px solid rgb(255, 217, 0);
+    border-radius: 1rem;
+    background: #010025;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0);
+    max-width: 400px;
+}
+
